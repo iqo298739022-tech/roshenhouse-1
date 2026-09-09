@@ -1,1340 +1,1309 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>روشن هاوس | المركز العقاري الدولي الفاخر — استثمارات جورجيا، باكو، إسطنبول ودبي</title>
-    <meta name="description" content="روشن هاوس - بوابتك للاستثمار العقاري الدولي الفاخر في جورجيا، باكو، إسطنبول، ودبي. تملك فوري، خطط تمويل بنكية حتى 60%، وإدارة عقارية بعائد شهري مضمون حتى 10 سنوات.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        gold: {
-                            DEFAULT: '#C9A84C',
-                            light: '#F4D375',
-                            dark: '#9E7A27',
-                            glow: 'rgba(201, 168, 76, 0.35)'
-                        },
-                        dark: {
-                            950: '#050406',
-                            900: '#09070C',
-                            800: '#120F17',
-                            700: '#1A1622',
-                            600: '#262030'
-                        }
-                    },
-                    fontFamily: {
-                        tajawal: ['Tajawal', 'sans-serif'],
-                        playfair: ['Playfair Display', 'serif'],
-                        cinzel: ['Cinzel', 'serif']
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>روشن هاوس | المركز العقاري الفاخر — استثمارات جورجيا، باكو، إسطنبول ودبي</title>
+<meta name="description" content="روشن هاوس — وجهتك الأولى للاستثمار العقاري الدولي الفاخر في جورجيا، باكو، إسطنبول، دبي وإسبانيا مع أعلى العوائد الاستثمارية، تمويل بنكي حتى 60% وعائد شهري مضمون.">
 
-    <style>
-        :root {
-            --gold: #c9a84c;
-            --gold-light: #f3d77e;
-            --gold-bright: #ffe68d;
-            --dark-base: #060508;
-            --dark-card: #120f18;
-            --dark-card-hover: #1b1624;
-            --line-gold: rgba(201, 168, 76, 0.22);
-            --danger-glow: rgba(239, 68, 68, 0.7);
-        }
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        gold: { DEFAULT: '#C9A84C', light: '#F4D375', dark: '#9E7A27', glow: 'rgba(201, 168, 76, 0.35)' },
+        dark: { 900: '#070608', 800: '#0E0C10', 700: '#16131A', 600: '#201C25' }
+      },
+      fontFamily: {
+        tajawal: ['Tajawal', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        cinzel: ['Cinzel', 'serif']
+      }
+    }
+  }
+}
+</script>
 
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: var(--dark-base);
-            color: #f7f4ed;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201, 168, 76, 0.15), transparent),
-                radial-gradient(ellipse 60% 40% at 90% 50%, rgba(158, 122, 39, 0.08), transparent),
-                radial-gradient(ellipse 70% 50% at 10% 80%, rgba(186, 142, 47, 0.07), transparent);
-        }
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0b090e; }
-        ::-webkit-scrollbar-thumb { 
-            background: linear-gradient(180deg, #c9a84c, #705419); 
-            border-radius: 999px; 
-        }
+<style>
+:root {
+  --gold: #c9a84c;
+  --gold-light: #f3d77e;
+  --gold-bright: #ffe68d;
+  --dark-base: #080709;
+  --dark-card: #120f16;
+  --line-gold: rgba(201, 168, 76, 0.2);
+}
 
-        /* Typography & Gradients */
-        .text-gold-gradient {
-            background: linear-gradient(135deg, #FFF4CC 0%, #E3BE62 40%, #B88E2D 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-        .border-gold-glow {
-            border: 1px solid var(--line-gold);
-            box-shadow: 0 0 25px rgba(201, 168, 76, 0.12);
-        }
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: var(--dark-base);
+  color: #f7f4ed;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 168, 76, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 60%, rgba(142, 102, 23, 0.08), transparent);
+}
 
-        .gold-button-gradient {
-            background: linear-gradient(135deg, #E2BE5E 0%, #C9A84C 50%, #9E7A27 100%);
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            color: #0b0906;
-            font-weight: 700;
-        }
-        .gold-button-gradient:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(201, 168, 76, 0.45);
-            background: linear-gradient(135deg, #fae290 0%, #e2be5e 50%, #b38b2c 100%);
-        }
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0b090e; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #c9a84c, #705419); border-radius: 999px; }
 
-        /* Glassmorphism Cards */
-        .glass-card {
-            background: rgba(18, 15, 24, 0.72);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(201, 168, 76, 0.18);
-            transition: all 0.35s ease;
-        }
-        .glass-card:hover {
-            border-color: rgba(201, 168, 76, 0.48);
-            transform: translateY(-5px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(201, 168, 76, 0.18);
-        }
+/* Golden Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0B8 0%, #D8B153 50%, #A67D28 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-        /* URGENT FLASHING / BEACON ANIMATION */
-        @keyframes urgentBeacon {
-            0% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.9);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.06);
-                box-shadow: 0 0 0 14px rgba(239, 68, 68, 0);
-                opacity: 0.85;
-            }
-            100% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
-                opacity: 1;
-            }
-        }
+.gold-button-gradient {
+  background: linear-gradient(135deg, #d8b252 0%, #ba8e2f 100%);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #0b0906;
+}
+.gold-button-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(201, 168, 76, 0.45);
+  background: linear-gradient(135deg, #ecd178 0%, #cfa33e 100%);
+}
 
-        @keyframes emergencyFlash {
-            0%, 100% { 
-                opacity: 1; 
-                filter: drop-shadow(0 0 10px #ef4444);
-                background-color: #ef4444;
-            }
-            50% { 
-                opacity: 0.35; 
-                filter: drop-shadow(0 0 1px transparent);
-                background-color: #7f1d1d;
-            }
-        }
+/* ===== Flash & Beacon (تضوي وتطفي) ===== */
+@keyframes urgentBeacon {
+  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.85); opacity: 1; }
+  50%  { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); opacity: 0.8; }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); opacity: 1; }
+}
+@keyframes emergencyFlash {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px #ef4444); }
+  50%      { opacity: 0.35; filter: drop-shadow(0 0 0px transparent); }
+}
+.urgency-badge {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.95), rgba(153, 27, 27, 0.95));
+  border: 1px solid rgba(254, 202, 202, 0.4);
+  animation: urgentBeacon 2s infinite ease-in-out;
+}
+.text-flash { animation: emergencyFlash 1.2s infinite; }
 
-        .beacon-pulse {
-            animation: urgentBeacon 1.4s infinite cubic-bezier(0.45, 0, 0.55, 1);
-        }
+/* Glassmorphism */
+.glass-card {
+  background: rgba(18, 15, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  transition: all 0.35s ease;
+}
+.glass-card:hover {
+  border-color: rgba(201, 168, 76, 0.45);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(201, 168, 76, 0.15);
+}
 
-        .dot-flash {
-            animation: emergencyFlash 1s infinite;
-        }
+/* Toast */
+.toast-bubble {
+  transform: translateY(120px); opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.toast-bubble.show { transform: translateY(0); opacity: 1; }
 
-        .urgency-badge {
-            background: linear-gradient(135deg, rgba(220, 38, 38, 0.95), rgba(153, 27, 27, 0.95));
-            border: 1px solid rgba(254, 202, 202, 0.5);
-            animation: urgentBeacon 1.8s infinite ease-in-out;
-        }
+/* Range Slider */
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; background: transparent; }
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; height: 22px; width: 22px; border-radius: 50%;
+  background: #d8b252; cursor: pointer; box-shadow: 0 0 10px rgba(216, 178, 82, 0.8);
+  border: 2px solid #ffffff; margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb {
+  height: 20px; width: 20px; border-radius: 50%; background: #d8b252; cursor: pointer;
+  box-shadow: 0 0 10px rgba(216, 178, 82, 0.8); border: 2px solid #fff;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%; height: 6px; cursor: pointer; background: #2b2533; border-radius: 6px; border: none;
+}
+input[type=range]::-moz-range-track { width: 100%; height: 6px; background: #2b2533; border-radius: 6px; }
 
-        /* Slider Input Styling */
-        input[type=range] {
-            -webkit-appearance: none;
-            width: 100%;
-            background: transparent;
-        }
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            height: 24px;
-            width: 24px;
-            border-radius: 50%;
-            background: #E2BE5E;
-            cursor: pointer;
-            box-shadow: 0 0 14px rgba(226, 190, 94, 0.9);
-            border: 2.5px solid #ffffff;
-            margin-top: -9px;
-        }
-        input[type=range]::-webkit-slider-runnable-track {
-            width: 100%;
-            height: 6px;
-            cursor: pointer;
-            background: #2b2338;
-            border-radius: 6px;
-        }
+/* Reveal on scroll */
+.reveal { opacity: 0; transform: translateY(34px); transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
-        /* Sold Out Stamp */
-        .sold-badge {
-            background: rgba(45, 10, 10, 0.85);
-            border: 1px dashed #ef4444;
-            color: #fca5a5;
-        }
+.section-eyebrow {
+  display: inline-flex; align-items: center; gap: .6rem; font-size: .8rem; letter-spacing: .2em;
+  color: var(--gold); border: 1px solid var(--line-gold); border-radius: 999px;
+  padding: .35rem 1rem; background: rgba(201,168,76,.06);
+}
+.gold-divider {
+  width: 90px; height: 2px; margin: 0 auto;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent); position: relative;
+}
+.gold-divider::after {
+  content: '\f005'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  background: #080709; color: #c9a84c; padding: 0 10px; font-size: .6rem;
+}
 
-        /* Custom UI */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+/* Hero orbs */
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+.float-slow { animation: floatY 5s ease-in-out infinite; }
+.float-slower { animation: floatY 7s ease-in-out infinite; }
+.orb { position:absolute; border-radius:50%; filter: blur(70px); opacity:.5; pointer-events:none; }
+.hero-grid-lines {
+  background-image: linear-gradient(rgba(201,168,76,.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(201,168,76,.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
+}
 
-        /* Notification Toast */
-        .toast-bubble {
-            transform: translateY(120px);
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .toast-bubble.show {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    </style>
+/* Units progress */
+.units-progress { height: 8px; border-radius: 999px; background: #241f2c; overflow: hidden; }
+.units-progress span {
+  display: block; height: 100%; width: 0; border-radius: 999px;
+  background: linear-gradient(90deg, #8a6a20, #d8b252, #f3d77e);
+  transition: width 1.4s cubic-bezier(.16,1,.3,1);
+  box-shadow: 0 0 12px rgba(201,168,76,.5);
+}
+.units-progress.danger span {
+  background: linear-gradient(90deg, #7f1d1d, #ef4444, #f87171);
+  box-shadow: 0 0 12px rgba(239,68,68,.55);
+}
+
+/* Countdown */
+.count-box {
+  min-width: 74px; padding: .7rem .5rem; text-align: center;
+  background: rgba(18,15,22,.85); border: 1px solid var(--line-gold); border-radius: 14px;
+}
+.count-num { font-size: 1.6rem; font-weight: 900; color: #ffe9ad; text-shadow: 0 0 18px rgba(201,168,76,.55); }
+
+/* Filter buttons */
+.filter-btn { transition: all .3s ease; border:1px solid rgba(201,168,76,.25); color:#cbbfa4; }
+.filter-btn.active, .filter-btn:hover {
+  background: linear-gradient(135deg,#d8b252,#ba8e2f); color:#0b0906;
+  border-color: transparent; box-shadow: 0 8px 22px rgba(201,168,76,.35);
+}
+
+/* Steps */
+.step-line { position: absolute; top: 34px; right: 60px; left: 60px; height: 2px;
+  background: linear-gradient(90deg, rgba(201,168,76,.05), rgba(201,168,76,.5), rgba(201,168,76,.05)); }
+
+/* FAQ */
+.faq-item .faq-answer { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(.16,1,.3,1); }
+.faq-item.open .faq-answer { max-height: 400px; }
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+.faq-chevron { transition: transform .4s ease; }
+
+/* Marquee */
+@keyframes tickerMove { from { transform: translateX(0); } to { transform: translateX(50%); } }
+.ticker-track { display:flex; gap:3rem; width:max-content; animation: tickerMove 30s linear infinite; }
+
+/* Payment structure bar */
+.pay-seg { transition: width 1.6s cubic-bezier(.16,1,.3,1); }
+
+/* ROI chart bars */
+.roi-bar { transition: height .9s cubic-bezier(.16,1,.3,1); background: linear-gradient(180deg,#f3d77e,#8a6a20); border-radius: 6px 6px 0 0; box-shadow: 0 0 10px rgba(201,168,76,.25); min-height: 4px; }
+.roi-bar.final { background: linear-gradient(180deg,#ffe9ad,#ba8e2f); box-shadow: 0 0 16px rgba(201,168,76,.5); }
+
+@media (max-width: 767px) { .step-line { display: none; } }
+</style>
 </head>
-<body class="selection:bg-gold selection:text-black">
 
-    <!-- Top Urgency Bar -->
-    <div class="bg-gradient-to-r from-red-950 via-dark-900 to-red-950 border-b border-red-900/50 py-2.5 px-4 text-xs md:text-sm">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
-                <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500 dot-flash"></span>
-                <span class="font-bold text-red-300">تحديث عاجل للفرص العقارية:</span>
-                <span class="text-slate-300">طرح آخر 3 وحدات فندقية استثمارية في جورجيا وباكو بعائد دولاري مضمون!</span>
-            </div>
-            <div class="flex items-center gap-4 text-slate-300">
-                <span class="hidden md:inline"><i class="fa-solid fa-file-contract text-gold ml-1"></i> تملك فوري 100%</span>
-                <a href="#projects" class="text-gold hover:text-gold-light underline font-bold transition">احجز قبل نفاد الطرح &larr;</a>
-            </div>
-        </div>
+<body class="text-slate-100 antialiased selection:bg-gold selection:text-black">
+
+<!-- ===== Top Announcement Bar ===== -->
+<div class="bg-gradient-to-l from-[#8a6a20] via-[#c9a84c] to-[#8a6a20] text-black text-sm font-bold py-2 overflow-hidden">
+  <div class="ticker-track" id="ticker">
+    <div class="flex gap-12 shrink-0 items-center">
+      <span><i class="fa-solid fa-fire text-red-800"></i> عرض حصري: دفعة أولى 20% فقط والباقي تقسيط حتى 3 سنوات</span>
+      <span><i class="fa-solid fa-building-columns"></i> تمويل بنكي حتى 60% من قيمة العقار — القرض حر التصرف والتملك فوري</span>
+      <span><i class="fa-solid fa-shield-halved"></i> عائد شهري مضمون بعقد إدارة مؤجرة 10 سنوات وأكثر</span>
+      <span><i class="fa-solid fa-chart-line"></i> عوائد تصل إلى 10% سنوياً في جورجيا وباكو</span>
+      <span><i class="fa-solid fa-fire text-red-800"></i> آخر الوحدات في باتومي سي تاون — 3 وحدات فقط!</span>
     </div>
-
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-dark-950/85 backdrop-blur-md border-b border-gold/15">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <div class="flex items-center gap-3">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-light via-gold to-gold-dark flex items-center justify-center text-dark-950 shadow-lg shadow-gold/20">
-                    <i class="fa-solid fa-hotel text-xl"></i>
-                </div>
-                <div>
-                    <span class="font-cinzel text-xl md:text-2xl font-black tracking-wider text-gold-gradient block leading-none">ROWSHAN HOUSE</span>
-                    <span class="text-[11px] font-tajawal text-slate-400 tracking-widest block mt-1">المركز العقاري الدولي الفاخر</span>
-                </div>
-            </div>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
-                <a href="#projects" class="hover:text-gold transition">المشاريع الدولية</a>
-                <a href="#calculator" class="hover:text-gold transition flex items-center gap-1.5 text-gold-light font-bold">
-                    <i class="fa-solid fa-calculator text-xs"></i> حاسبة العوائد
-                </a>
-                <a href="#financing" class="hover:text-gold transition">التمويل البنكي والتقسيط</a>
-                <a href="#management" class="hover:text-gold transition">عقود الإدارة 10 سنوات</a>
-                <a href="#guarantees" class="hover:text-gold transition">الضمانات والتملك الفوري</a>
-            </nav>
-
-            <!-- Action Button -->
-            <div class="flex items-center gap-3">
-                <a href="https://wa.me/995555000000?text=مرحبا،%20أريد%20الاستفسار%20عن%20المشاريع%20المتاحة%20في%20روشن%20هاوس" target="_blank" class="gold-button-gradient px-4 py-2.5 rounded-lg text-xs md:text-sm font-bold flex items-center gap-2 shadow-md">
-                    <i class="fa-brands fa-whatsapp text-base"></i>
-                    <span>تواصل مع مستشارك</span>
-                </a>
-                <button id="mobileMenuBtn" class="lg:hidden text-slate-300 hover:text-gold text-2xl p-1">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-dark-900 border-b border-gold/20 px-6 py-5 space-y-4">
-            <a href="#projects" class="block text-slate-200 hover:text-gold font-medium">المشاريع الدولية</a>
-            <a href="#calculator" class="block text-gold-light font-bold">حاسبة العوائد الاستثمارية</a>
-            <a href="#financing" class="block text-slate-200 hover:text-gold font-medium">التمويل البنكي والتسهيلات</a>
-            <a href="#management" class="block text-slate-200 hover:text-gold font-medium">عقد الإدارة والعائد المضمون</a>
-            <a href="#guarantees" class="block text-slate-200 hover:text-gold font-medium">مزايا التملك الفوري</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
-        <!-- Abstract Glow Background -->
-        <div class="absolute top-1/4 -right-40 w-96 h-96 bg-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-10 -left-40 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-gold-light text-xs md:text-sm mb-6">
-                    <i class="fa-solid fa-crown text-xs text-gold"></i>
-                    <span>الوجهة الرائدة للتسويق والاستثمار العقاري العالمي</span>
-                </div>
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                    استثمر بأمان في <span class="text-gold-gradient">جورجيا، باكو وإسطنبول</span> بتملك فوري وعوائد مضمونة
-                </h1>
-                <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
-                    مع <strong>روشن هاوس (المركز العقاري)</strong>، امتلك عقارك الفاخر بدفعة أولى تبدأ من <span class="text-gold font-bold">20% فقط</span>، وتمويل بنكي يصل حتى <span class="text-gold font-bold">60%</span> مع حرية تصرف وتملك فوري، مع إمكانية إدارة العقار بالكامل بعقد إيجاري إلزامي لمدة تصل إلى <span class="text-gold font-bold">10 سنوات</span> بعائد شهري صافٍ.
-                </p>
-
-                <!-- Urgent Notice In Hero -->
-                <div class="inline-flex flex-wrap items-center justify-center gap-3 bg-red-950/50 border border-red-500/30 px-5 py-3 rounded-2xl mb-8">
-                    <span class="w-3 h-3 rounded-full bg-red-500 beacon-pulse"></span>
-                    <span class="text-red-300 text-xs sm:text-sm font-semibold">تنبيه المبيعات: تم بيع 88% من مشاريع تبليسي وباكو — باقي وحدات محدودة جداً</span>
-                </div>
-
-                <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="#calculator" class="gold-button-gradient px-8 py-4 rounded-xl text-base font-bold shadow-xl flex items-center gap-2">
-                        <i class="fa-solid fa-calculator"></i>
-                        <span>احسب عائدك الاستثماري المتوقع</span>
-                    </a>
-                    <a href="#projects" class="px-7 py-4 rounded-xl border border-gold/40 text-slate-200 hover:text-gold hover:border-gold transition bg-dark-800/60 font-bold flex items-center gap-2">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>تصفح المشاريع المتبقية</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Key Metric Cards -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-                <div class="glass-card p-5 rounded-2xl text-center border-t-2 border-t-gold">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-gradient font-playfair mb-1">20% فقط</div>
-                    <div class="text-xs sm:text-sm text-slate-400">مقدم حجز وتعاقد</div>
-                    <div class="text-[11px] text-slate-500 mt-1">والباقي تقسيط حتى 3 سنوات وأكثر</div>
-                </div>
-                <div class="glass-card p-5 rounded-2xl text-center border-t-2 border-t-gold">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-gradient font-playfair mb-1">حتى 60%</div>
-                    <div class="text-xs sm:text-sm text-slate-400">تمويل بنكي معتمد</div>
-                    <div class="text-[11px] text-slate-500 mt-1">قروض وتسهيلات بنكية ميسرة</div>
-                </div>
-                <div class="glass-card p-5 rounded-2xl text-center border-t-2 border-t-gold">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-gradient font-playfair mb-1">10 سنوات</div>
-                    <div class="text-xs sm:text-sm text-slate-400">إدارة وتشغيل فندقي</div>
-                    <div class="text-[11px] text-slate-500 mt-1">عقد استثماري بعائد شهري مضمون</div>
-                </div>
-                <div class="glass-card p-5 rounded-2xl text-center border-t-2 border-t-gold">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-gradient font-playfair mb-1">100%</div>
-                    <div class="text-xs sm:text-sm text-slate-400">تملك فوري وحر</div>
-                    <div class="text-[11px] text-slate-500 mt-1">سند ملكية رسمي وحرية تصرف كاملة</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Financing & Ownership Advantages (ميزات التمويل والتملك الفوري) -->
-    <section id="financing" class="py-20 bg-dark-900 border-y border-gold/10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold text-xs font-bold tracking-widest uppercase">حلول مالية مرنة وميسرة</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">خطة السداد والتمويل الاستثماري الذكي</h2>
-                <p class="text-slate-400 text-sm sm:text-base mt-3">نمنحك أسهل آليات التملك دون تعقيدات بنكية، لتكون شريكاً في أرباح العقار من اليوم الأول.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="glass-card p-7 rounded-2xl relative overflow-hidden group">
-                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-5 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-piggy-bank"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">20% دفعة أولى وتقسيط مرن</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        ادفع فقط 20% كمقدم تعاقد، وسدد المبلغ المتبقي على أقساط ميسرة ومجدولة تمتد على مدار <strong>3 سنوات وأكثر</strong> بدون فوائد خفية أو تعقيدات.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-gold/10 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> جداول سداد مرنة شهرية أو ربع سنوية</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> تثبيت سعر العقار بالدولار الأمريكي</li>
-                    </ul>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="glass-card p-7 rounded-2xl relative overflow-hidden group border-gold/40 shadow-lg shadow-gold/5">
-                    <div class="absolute top-3 left-3 bg-gold text-dark-950 text-[10px] font-extrabold px-2.5 py-1 rounded-full">
-                        ميزة حصرية
-                    </div>
-                    <div class="w-14 h-14 rounded-xl bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-5 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-landmark"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">تمويل بنكي يصل حتى 60%</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        إمكانية الحصول على تمويل مصرفي معتمد يغطي حتى <strong>60% من القيمة الإجمالية للعقار</strong>، لتسديد سعر وحدتك من خلال التدفقات النقدية وعوائد الإيجار.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-gold/10 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> شروط ميسرة للمستثمرين الدوليين والعرب</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> دعم كامل في استخراج الموافقات البنكية</li>
-                    </ul>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="glass-card p-7 rounded-2xl relative overflow-hidden group">
-                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-5 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-key"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">تملك فوري وحرية تصرف كاملة</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        سند ملكية حر وفوري باسم المشتري بنسبة 100%، يمنحك كامل الحرية في إعادة البيع، السكن، الرهن، أو تأجيره مع إمكانية التقديم على الإقامة العقارية.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-gold/10 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> استلام فوري لسند الطابو الرسمي</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> مؤهل لمنح الإقامة للمستثمر وعائلته</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 10-Year Guaranteed Rental Management (إدارة العقار بعقد 10 سنوات) -->
-    <section id="management" class="py-20 bg-dark-950 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="glass-card border-gold/30 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    <div class="lg:col-span-7 space-y-5">
-                        <div class="inline-flex items-center gap-2 text-xs font-bold text-gold bg-gold/10 px-3 py-1 rounded-full border border-gold/20">
-                            <i class="fa-solid fa-shield-halved"></i> إدارة عقارية متكاملة بدون أي عناء
-                        </div>
-                        <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-snug">
-                            عقد إدارة وتشغيل فندقي لمدة <span class="text-gold-gradient">10 سنوات وأكثر</span> بعائد شهري مضمون
-                        </h2>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                            لا داعي للقلق بشأن البحث عن مستأجرين أو صيانة العقار! يتولى فريق <strong>روشن هاوس (المركز العقاري)</strong> إدارة وحدتك بالكامل من خلال عقود تشغيل فندقي واستثماري رسمي موثق تضمن لك:
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                            <div class="flex items-start gap-3 bg-dark-900/80 p-3.5 rounded-xl border border-gold/10">
-                                <i class="fa-solid fa-circle-check text-gold text-lg mt-0.5"></i>
-                                <div>
-                                    <div class="font-bold text-white text-sm">عائد شهري صافٍ بالدولار</div>
-                                    <div class="text-xs text-slate-400">تحويل شهري مباشر لحسابك البنكي الدولي</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-dark-900/80 p-3.5 rounded-xl border border-gold/10">
-                                <i class="fa-solid fa-circle-check text-gold text-lg mt-0.5"></i>
-                                <div>
-                                    <div class="font-bold text-white text-sm">عقد تشغيل رسمي 10 سنوات</div>
-                                    <div class="text-xs text-slate-400">اتفاقية قانونية مع إمكانية التجديد التلقائي</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-dark-900/80 p-3.5 rounded-xl border border-gold/10">
-                                <i class="fa-solid fa-circle-check text-gold text-lg mt-0.5"></i>
-                                <div>
-                                    <div class="font-bold text-white text-sm">صيانة دورية وحفاظ على القيمة</div>
-                                    <div class="text-xs text-slate-400">فريق صيانة ونظافة فندقية على مدار الساعة</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-dark-900/80 p-3.5 rounded-xl border border-gold/10">
-                                <i class="fa-solid fa-circle-check text-gold text-lg mt-0.5"></i>
-                                <div>
-                                    <div class="font-bold text-white text-sm">تقارير وإشغال فندقي رقمي</div>
-                                    <div class="text-xs text-slate-400">لوحة تحكم إلكترونية لمتابعة أداء عقارك بدقة</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-5 bg-gradient-to-b from-dark-900 to-dark-800 p-6 sm:p-8 rounded-2xl border border-gold/20 text-center">
-                        <div class="text-gold text-xs font-bold uppercase tracking-wider mb-2">متوسط العائد الإيجاري الصافي المضمون</div>
-                        <div class="text-4xl sm:text-5xl font-black text-gold-gradient font-playfair mb-2">12% - 18%</div>
-                        <p class="text-xs text-slate-400 mb-6">عائد سنوي صافٍ مع نمو رأسمالي سنوي متوقع للأصل يصل إلى 15%</p>
-                        
-                        <div class="space-y-3 text-right text-xs text-slate-300 border-t border-gold/10 pt-4">
-                            <div class="flex justify-between items-center">
-                                <span>مدة العقد:</span>
-                                <span class="font-bold text-white">10 سنوات قابلة للتجديد</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span>دورية صرف الأرباح:</span>
-                                <span class="font-bold text-gold">شهرياً / ربع سنوي</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span>عملة استلام العائد:</span>
-                                <span class="font-bold text-white">الدولار الأمريكي ($)</span>
-                            </div>
-                        </div>
-
-                        <a href="https://wa.me/995555000000?text=أريد%20الاطلاع%20على%20عقد%20الإدارة%20والتشغيل%20لمدة%2010%20سنوات" target="_blank" class="w-full mt-6 py-3 rounded-xl gold-button-gradient block text-xs font-bold text-center">
-                            طلب نسخة من مسودة عقد الإدارة
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section (المشاريع العقارية مع علامة تضوي وتطفي ومباع مباع) -->
-    <section id="projects" class="py-20 bg-dark-900 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-                <div>
-                    <span class="text-gold text-xs font-bold tracking-widest uppercase">طروحات حصرية وفرص استثنائية</span>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">المشاريع العقارية المتاحة دولياً</h2>
-                    <p class="text-slate-400 text-sm mt-2">فرص استثمارية في جورجيا، باكو، إسطنبول، ودبي تم اختيارها بعناية لتحقيق أعلى عائد.</p>
-                </div>
-                
-                <!-- Filter Tabs -->
-                <div class="flex flex-wrap gap-2 text-xs font-semibold">
-                    <button onclick="filterProjects('all')" class="project-tab-btn active px-4 py-2 rounded-lg bg-gold text-dark-950 transition">الكل</button>
-                    <button onclick="filterProjects('georgia')" class="project-tab-btn px-4 py-2 rounded-lg bg-dark-800 text-slate-300 hover:text-white border border-gold/15 transition">جورجيا (تبليسي وباتومي)</button>
-                    <button onclick="filterProjects('baku')" class="project-tab-btn px-4 py-2 rounded-lg bg-dark-800 text-slate-300 hover:text-white border border-gold/15 transition">باكو (أذربيجان)</button>
-                    <button onclick="filterProjects('istanbul')" class="project-tab-btn px-4 py-2 rounded-lg bg-dark-800 text-slate-300 hover:text-white border border-gold/15 transition">إسطنبول (تركيا)</button>
-                </div>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1: Georgia Tbilisi (باقي 3 وحدات - علامة تضوي وتطفي) -->
-                <div class="project-card glass-card rounded-2xl overflow-hidden group" data-country="georgia">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="مشروع تبليسي الفاخر" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
-                        
-                        <!-- Flashing Urgency Badge (تضوي وتطفي) -->
-                        <div class="absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full urgency-badge text-white text-xs font-extrabold shadow-lg">
-                            <span class="w-2.5 h-2.5 rounded-full bg-white dot-flash"></span>
-                            <span>عاجل: باقي 3 وحدات سكنية فقط!</span>
-                        </div>
-
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-gold">
-                            <i class="fa-solid fa-location-dot ml-1"></i> تبليسي، جورجيا
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">روشن سكاي تاور — تبليسي</h3>
-                            <span class="text-gold font-playfair font-black text-lg">$65,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            شقق فندقية بإطلالات بانورامية على الجبال والمدينة، مع إدارة فندقية شاملة وعائد مضمون يصل إلى 16% سنوياً.
-                        </p>
-
-                        <!-- Units Sold Progress Indicator -->
-                        <div class="mb-4 bg-dark-950 p-3 rounded-xl border border-red-900/30">
-                            <div class="flex justify-between items-center text-xs mb-1.5">
-                                <span class="text-red-400 font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-fire text-red-500"></i> تم حجز 96% من المشروع
-                                </span>
-                                <span class="text-slate-400 text-[11px] font-bold">مباع مباع (باقي 3 وحدات)</span>
-                            </div>
-                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-500 h-full rounded-full" style="width: 96%"></div>
-                            </div>
-                        </div>
-
-                        <!-- Highlights -->
-                        <div class="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-5 bg-dark-900/60 p-2.5 rounded-lg">
-                            <div><i class="fa-solid fa-wallet text-gold ml-1"></i> مقدم 20% فقط</div>
-                            <div><i class="fa-solid fa-building-columns text-gold ml-1"></i> تمويل حتى 60%</div>
-                            <div><i class="fa-solid fa-handshake text-gold ml-1"></i> عقد إدارة 10 سنوات</div>
-                            <div><i class="fa-solid fa-certificate text-gold ml-1"></i> تملك حر فوري</div>
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="#calculator" class="flex-1 py-2.5 rounded-lg border border-gold/40 text-gold hover:bg-gold hover:text-dark-950 text-xs font-bold text-center transition">
-                                حساب العائد
-                            </a>
-                            <a href="https://wa.me/995555000000?text=أريد%20حجز%20إحدى%20الوحدات%20الثلاث%20المتبقية%20في%20مشروع%20تبليسي" target="_blank" class="flex-1 py-2.5 rounded-lg gold-button-gradient text-xs font-bold text-center">
-                                حجز الوحدة الآن
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Baku Luxury Residences (باقي وحدتان فقط - وميض سريع) -->
-                <div class="project-card glass-card rounded-2xl overflow-hidden group" data-country="baku">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="مشروع باكو كاسبيان" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
-                        
-                        <!-- Flashing Urgency Badge -->
-                        <div class="absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full urgency-badge text-white text-xs font-extrabold shadow-lg">
-                            <span class="w-2.5 h-2.5 rounded-full bg-white dot-flash"></span>
-                            <span>إشعار طلب عالي: باقي وحدتان 2 فقط!</span>
-                        </div>
-
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-gold">
-                            <i class="fa-solid fa-location-dot ml-1"></i> باكو، أذربيجان
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">كاسبيان ريزيدنس — باكو</h3>
-                            <span class="text-gold font-playfair font-black text-lg">$82,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            مجمع سكني وسياحي فاخر بإطلالة مباشرة على بحر قزوين، مصمم لمنح أعلى عائد تأجيري موسمي وسنوي.
-                        </p>
-
-                        <!-- Sold Progress -->
-                        <div class="mb-4 bg-dark-950 p-3 rounded-xl border border-red-900/30">
-                            <div class="flex justify-between items-center text-xs mb-1.5">
-                                <span class="text-red-400 font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-fire text-red-500"></i> تم بيع 98% بالكامل
-                                </span>
-                                <span class="text-slate-400 text-[11px] font-bold">مباع مباع (باقي 2 وحدة)</span>
-                            </div>
-                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-500 h-full rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
-
-                        <!-- Highlights -->
-                        <div class="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-5 bg-dark-900/60 p-2.5 rounded-lg">
-                            <div><i class="fa-solid fa-wallet text-gold ml-1"></i> مقدم 20% تقسيط 3 سنوات</div>
-                            <div><i class="fa-solid fa-building-columns text-gold ml-1"></i> تمويل بنكي متوفر</div>
-                            <div><i class="fa-solid fa-handshake text-gold ml-1"></i> إدارة فندقية شاملة</div>
-                            <div><i class="fa-solid fa-passport text-gold ml-1"></i> مؤهل للإقامة الفورية</div>
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="#calculator" class="flex-1 py-2.5 rounded-lg border border-gold/40 text-gold hover:bg-gold hover:text-dark-950 text-xs font-bold text-center transition">
-                                حساب العائد
-                            </a>
-                            <a href="https://wa.me/995555000000?text=أريد%20الاستفسار%20عن%20آخر%20وحدتين%20في%20مشروع%20باكو" target="_blank" class="flex-1 py-2.5 rounded-lg gold-button-gradient text-xs font-bold text-center">
-                                حجز الوحدة الآن
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Batumi Seafront (مباع 92% - باقي 4 وحدات) -->
-                <div class="project-card glass-card rounded-2xl overflow-hidden group" data-country="georgia">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80" alt="مشروع باتومي بيتش" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
-                        
-                        <!-- Flashing Badge -->
-                        <div class="absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full urgency-badge text-white text-xs font-extrabold shadow-lg">
-                            <span class="w-2.5 h-2.5 rounded-full bg-white dot-flash"></span>
-                            <span>طرح أخير: متبقي 4 وحدات فندقية</span>
-                        </div>
-
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-gold">
-                            <i class="fa-solid fa-location-dot ml-1"></i> باتومي، جورجيا
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">باتومي مارينا بلازا</h3>
-                            <span class="text-gold font-playfair font-black text-lg">$54,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            استوديو وشقق ديلوكس على بعد 50 متراً من شاطئ البحر الأسود مع خدمة استقبال وتأجير فندقي 5 نجوم.
-                        </p>
-
-                        <!-- Progress -->
-                        <div class="mb-4 bg-dark-950 p-3 rounded-xl border border-red-900/30">
-                            <div class="flex justify-between items-center text-xs mb-1.5">
-                                <span class="text-red-400 font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-fire text-red-500"></i> تم بيع 92% من المشروع
-                                </span>
-                                <span class="text-slate-400 text-[11px] font-bold">مباع مباع (باقي 4 وحدات)</span>
-                            </div>
-                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-500 h-full rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-
-                        <!-- Highlights -->
-                        <div class="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-5 bg-dark-900/60 p-2.5 rounded-lg">
-                            <div><i class="fa-solid fa-wallet text-gold ml-1"></i> 20% دفعة أولى</div>
-                            <div><i class="fa-solid fa-clock text-gold ml-1"></i> تقسيط 36 شهراً</div>
-                            <div><i class="fa-solid fa-handshake text-gold ml-1"></i> عائد تشغيلي مضمون</div>
-                            <div><i class="fa-solid fa-water text-gold ml-1"></i> إطلالة بحرية أولى</div>
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="#calculator" class="flex-1 py-2.5 rounded-lg border border-gold/40 text-gold hover:bg-gold hover:text-dark-950 text-xs font-bold text-center transition">
-                                حساب العائد
-                            </a>
-                            <a href="https://wa.me/995555000000?text=أريد%20حجز%20شقة%20في%20مشروع%20باتومي%20مارينا" target="_blank" class="flex-1 py-2.5 rounded-lg gold-button-gradient text-xs font-bold text-center">
-                                حجز الوحدة الآن
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Istanbul Bosphorus (إسطنبول) -->
-                <div class="project-card glass-card rounded-2xl overflow-hidden group" data-country="istanbul">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80" alt="مشروع إسطنبول" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
-                        
-                        <div class="absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full urgency-badge text-white text-xs font-extrabold shadow-lg">
-                            <span class="w-2.5 h-2.5 rounded-full bg-white dot-flash"></span>
-                            <span>عاجل: آخر مرحلة تسليم فوري</span>
-                        </div>
-
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-gold">
-                            <i class="fa-solid fa-location-dot ml-1"></i> إسطنبول، تركيا
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">جراند البوسفور بالاس</h3>
-                            <span class="text-gold font-playfair font-black text-lg">$145,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            مجمع سكني استثماري راقٍ في الجانب الأوروبي، يمنحك عائد إيجاري بالدولار وتأهيل كامل للجنسية أو الإقامة.
-                        </p>
-
-                        <div class="mb-4 bg-dark-950 p-3 rounded-xl border border-red-900/30">
-                            <div class="flex justify-between items-center text-xs mb-1.5">
-                                <span class="text-red-400 font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-fire text-red-500"></i> تم بيع 94% من البرج
-                                </span>
-                                <span class="text-slate-400 text-[11px] font-bold">مباع مباع (باقي 3 وحدات)</span>
-                            </div>
-                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-500 h-full rounded-full" style="width: 94%"></div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-5 bg-dark-900/60 p-2.5 rounded-lg">
-                            <div><i class="fa-solid fa-wallet text-gold ml-1"></i> مقدم 20% فقط</div>
-                            <div><i class="fa-solid fa-building-columns text-gold ml-1"></i> خيار تمويل ميسر</div>
-                            <div><i class="fa-solid fa-handshake text-gold ml-1"></i> ضمان إيجاري موثق</div>
-                            <div><i class="fa-solid fa-passport text-gold ml-1"></i> مناسب للجنسية</div>
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="#calculator" class="flex-1 py-2.5 rounded-lg border border-gold/40 text-gold hover:bg-gold hover:text-dark-950 text-xs font-bold text-center transition">
-                                حساب العائد
-                            </a>
-                            <a href="https://wa.me/995555000000?text=أريد%20معلومات%20مشروع%20إسطنبول%20البوسفور" target="_blank" class="flex-1 py-2.5 rounded-lg gold-button-gradient text-xs font-bold text-center">
-                                حجز الوحدة الآن
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Tbilisi Hills Golf Villas (تم البيع تقريباً بالكامل) -->
-                <div class="project-card glass-card rounded-2xl overflow-hidden group" data-country="georgia">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="فلل تبليسي هيلز" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
-                        
-                        <div class="absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full urgency-badge text-white text-xs font-extrabold shadow-lg">
-                            <span class="w-2.5 h-2.5 rounded-full bg-white dot-flash"></span>
-                            <span>عاجل: آخر فيلا استثمارية متاحة!</span>
-                        </div>
-
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-gold">
-                            <i class="fa-solid fa-location-dot ml-1"></i> تبليسي هيلز، جورجيا
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">فلل رويال جولف هيلز</h3>
-                            <span class="text-gold font-playfair font-black text-lg">$190,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            فلل مستقلة ذات عائد سياحي خيالي مع مسبح خاص وحديقة واسعة وإدارة فندقية كاملة طوال العام.
-                        </p>
-
-                        <div class="mb-4 bg-dark-950 p-3 rounded-xl border border-red-900/30">
-                            <div class="flex justify-between items-center text-xs mb-1.5">
-                                <span class="text-red-400 font-bold flex items-center gap-1">
-                                    <i class="fa-solid fa-fire text-red-500"></i> تم بيع 99% (المرحلة الأولى)
-                                </span>
-                                <span class="text-slate-400 text-[11px] font-bold">مباع مباع (باقي 1 فيلا)</span>
-                            </div>
-                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-500 h-full rounded-full" style="width: 99%"></div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-5 bg-dark-900/60 p-2.5 rounded-lg">
-                            <div><i class="fa-solid fa-wallet text-gold ml-1"></i> مقدم 20% مرن</div>
-                            <div><i class="fa-solid fa-file-contract text-gold ml-1"></i> عقد إدارة 10 سنوات</div>
-                            <div><i class="fa-solid fa-money-bill-trend-up text-gold ml-1"></i> عائد يتجاوز 17%</div>
-                            <div><i class="fa-solid fa-house-circle-check text-gold ml-1"></i> تملك فوري وسند طابو</div>
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="#calculator" class="flex-1 py-2.5 rounded-lg border border-gold/40 text-gold hover:bg-gold hover:text-dark-950 text-xs font-bold text-center transition">
-                                حساب العائد
-                            </a>
-                            <a href="https://wa.me/995555000000?text=أريد%20حجز%20الفيلا%20الأخيرة%20في%20تبليسي%20هيلز" target="_blank" class="flex-1 py-2.5 rounded-lg gold-button-gradient text-xs font-bold text-center">
-                                حجز الفيلا الأخيرة
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Sold Out Showcase (مشروع مباع بالكامل لتأكيد المصداقية وسرعة البيع) -->
-                <div class="glass-card rounded-2xl overflow-hidden opacity-75 relative">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80" alt="مشروع مباع" class="w-full h-full object-cover grayscale">
-                        <div class="absolute inset-0 bg-dark-950/60 flex items-center justify-center">
-                            <div class="sold-badge px-6 py-2.5 rounded-xl text-red-300 text-sm font-black transform -rotate-6 border-2 border-dashed border-red-500 shadow-2xl">
-                                <i class="fa-solid fa-lock ml-1"></i> مباع بالكامل 100% (SOLD OUT)
-                            </div>
-                        </div>
-                        <div class="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-md px-3 py-1 rounded-lg border border-gold/20 text-xs text-slate-400">
-                            <i class="fa-solid fa-location-dot ml-1"></i> باكو بوليفارد، أذربيجان
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-slate-300">أبراج الكريستال — باكو</h3>
-                            <span class="text-slate-400 line-through font-playfair">$95,000</span>
-                        </div>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                            تم بيع جميع وحدات المشروع البالغ عددها 120 وحدة استثمارية في فترة قياسية لمستثمري روشن هاوس.
-                        </p>
-                        <div class="bg-dark-950 p-3 rounded-xl text-center border border-slate-800">
-                            <span class="text-slate-400 text-xs">تم تسليم الوحدات وبدء صرف العائد الشهري للملاك</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Investment ROI Calculator (احسب عائدك الاستثماري المتوقع بدقة) -->
-    <section id="calculator" class="py-20 bg-dark-950 border-t border-gold/15 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-gold text-xs font-bold tracking-widest uppercase">أداة الحساب المالية الذكية</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">احسب عائدك الاستثماري المتوقع بدقة</h2>
-                <p class="text-slate-400 text-sm mt-3">
-                    تعرف على الأرباح الصافية المتوقعة، قيمة الدفعة الأولى (20%)، مبالغ التمويل البنكي (حتى 60%)، والتدفق النقدي الشهري والسنوي المضمون مع إدارة عقارك.
-                </p>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-2xl">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                    
-                    <!-- Controls Column -->
-                    <div class="lg:col-span-7 space-y-7">
-                        
-                        <!-- Country Selection -->
-                        <div>
-                            <label class="block text-sm font-bold text-white mb-2">1. اختر وجهة الاستثمار:</label>
-                            <div class="grid grid-cols-3 gap-3">
-                                <button type="button" onclick="setCalcLocation('georgia', 15)" id="btnGeo" class="calc-loc-btn active py-3 px-2 rounded-xl bg-gold text-dark-950 font-bold text-xs text-center border border-gold transition">
-                                    جورجيا (تبليسي/باتومي)
-                                </button>
-                                <button type="button" onclick="setCalcLocation('baku', 14)" id="btnBaku" class="calc-loc-btn py-3 px-2 rounded-xl bg-dark-900 text-slate-300 font-bold text-xs text-center border border-gold/20 hover:border-gold transition">
-                                    باكو (أذربيجان)
-                                </button>
-                                <button type="button" onclick="setCalcLocation('istanbul', 12)" id="btnIst" class="calc-loc-btn py-3 px-2 rounded-xl bg-dark-900 text-slate-300 font-bold text-xs text-center border border-gold/20 hover:border-gold transition">
-                                    إسطنبول (تركيا)
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Property Value Slider -->
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <label class="text-sm font-bold text-white">2. سعر العقار الإجمالي:</label>
-                                <span class="text-gold font-playfair font-black text-xl" id="propValLabel">$75,000</span>
-                            </div>
-                            <input type="range" id="propValRange" min="40000" max="300000" step="5000" value="75000" oninput="calculateROI()">
-                            <div class="flex justify-between text-[11px] text-slate-400 mt-1.5">
-                                <span>$40,000 (استوديو اقتصادي)</span>
-                                <span>$150,000 (شقة فندقية فاخرة)</span>
-                                <span>$300,000 (فيلا ديلوكس)</span>
-                            </div>
-                        </div>
-
-                        <!-- Downpayment & Financing Options -->
-                        <div class="bg-dark-900/80 p-4 rounded-2xl border border-gold/15 space-y-4">
-                            <div class="text-xs font-bold text-gold flex items-center gap-2">
-                                <i class="fa-solid fa-sliders"></i> تخصيص خطة السداد والتمويل:
-                            </div>
-
-                            <!-- Downpayment Slider -->
-                            <div>
-                                <div class="flex justify-between items-center text-xs text-slate-300 mb-1.5">
-                                    <span>نسبة الدفعة الأولى (المقدم):</span>
-                                    <span class="font-bold text-white" id="downPercentLabel">20%</span>
-                                </div>
-                                <input type="range" id="downPercentRange" min="20" max="100" step="10" value="20" oninput="calculateROI()">
-                            </div>
-
-                            <!-- Bank Financing Toggle -->
-                            <div class="flex items-center justify-between pt-2 border-t border-gold/10 text-xs">
-                                <span class="text-slate-300">تفعيل التمويل البنكي حتى 60% للمتبقي:</span>
-                                <label class="relative inline-flex items-center cursor-pointer">
-                                    <input type="checkbox" id="bankFinancingToggle" checked onchange="calculateROI()" class="sr-only peer">
-                                    <div class="w-11 h-6 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gold"></div>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Management Contract Duration -->
-                        <div>
-                            <label class="block text-sm font-bold text-white mb-2">3. مدة عقد إدارة العقار وتشغيله:</label>
-                            <select id="mgmtDuration" onchange="calculateROI()" class="w-full bg-dark-900 border border-gold/30 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-gold">
-                                <option value="10" selected>عقد تشغيل فندقي لمدة 10 سنوات (أعلى عائد واستقرار شهري)</option>
-                                <option value="5">عقد تشغيل لمدة 5 سنوات</option>
-                                <option value="3">عقد تشغيل لمدة 3 سنوات</option>
-                                <option value="1">عقد سنوي متجدد</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Summary & Output Box Column -->
-                    <div class="lg:col-span-5 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900 p-6 sm:p-7 rounded-2xl border-2 border-gold/40 flex flex-col justify-between">
-                        <div>
-                            <div class="text-center pb-4 border-b border-gold/15">
-                                <span class="text-[11px] font-bold text-gold uppercase tracking-widest">ملخص الأرباح والتدفق المالي</span>
-                                <div class="text-3xl font-black text-gold-gradient font-playfair mt-1" id="annualProfitOut">$11,250 / سنوياً</div>
-                                <div class="text-xs text-slate-400 mt-1">
-                                    صافي شهري: <span class="text-white font-bold" id="monthlyProfitOut">$937.50 / شهر</span>
-                                </div>
-                            </div>
-
-                            <!-- Financial Breakdown -->
-                            <div class="space-y-3 py-5 text-xs text-slate-300">
-                                <div class="flex justify-between items-center">
-                                    <span>الدفعة الأولى المطلوبة (<span id="downPctText">20%</span>):</span>
-                                    <span class="font-bold text-gold font-playfair text-sm" id="downValOut">$15,000</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span>التمويل البنكي أو التقسيط المتاح:</span>
-                                    <span class="font-bold text-white font-playfair text-sm" id="remainingValOut">$60,000</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span>نسبة العائد الصافي السنوي (ROI):</span>
-                                    <span class="font-bold text-emerald-400 text-sm" id="roiPctOut">15.0%</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span>إجمالي أرباح عقد الإدارة (<span id="contractYearsText">10</span> سنوات):</span>
-                                    <span class="font-bold text-gold font-playfair text-sm" id="totalContractProfitOut">$112,500</span>
-                                </div>
-                                <div class="flex justify-between items-center pt-2 border-t border-gold/10">
-                                    <span>النمو الرأسمالي المتوقع للأصل (10 سنين):</span>
-                                    <span class="font-bold text-emerald-400 font-playfair text-sm" id="capitalGrowthOut">+$67,500</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="bg-red-950/40 border border-red-500/30 p-2.5 rounded-xl text-[11px] text-red-200 text-center mb-3">
-                                <i class="fa-solid fa-clock-rotate-left ml-1"></i> يتم دفع العائد شهرياً بعقد ملزم وموثق رسمياً
-                            </div>
-                            <a id="calcWhatsappLink" href="https://wa.me/995555000000?text=أريد%20تثبيت%20حساب%20العائد%20الاستثماري%20لعقار%20بقيمة%2075000%20دولار" target="_blank" class="w-full py-3.5 rounded-xl gold-button-gradient block text-center text-xs font-bold shadow-lg">
-                                احجز خطتك الاستثمارية الآن
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Rowshan House? Guarantee Section -->
-    <section id="guarantees" class="py-20 bg-dark-900 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold text-xs font-bold tracking-widest uppercase">لماذا نحن خيارك الأول؟</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">الضمانات والأمان القانوني للمستثمر</h2>
-                <p class="text-slate-400 text-sm mt-3">نضمن لك تجربة استثمار عقاري دولي خالية من التعقيدات والمخاطر بأعلى المعايير القانونية.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold text-2xl flex items-center justify-center mx-auto mb-4 border border-gold/20">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">عقود قانونية موثقة</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        عقود شراء وتشغيل باللغتين العربية والإنجليزية وموثقة لدى كاتب العدل والجهات الحكومية الرسمية.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold text-2xl flex items-center justify-center mx-auto mb-4 border border-gold/20">
-                        <i class="fa-solid fa-passport"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">خدمات الإقامة والجنسية</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        فريقنا القانوني يساعدك في إصدار الإقامة العقارية لك ولعائلتك فور صدور سند الملكية.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold text-2xl flex items-center justify-center mx-auto mb-4 border border-gold/20">
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">تحويل الأرباح بالدولار</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        تحويل عوائد الإيجار الشهرية مباشرة إلى حسابك البنكي في بلدك دون قيود على حركة الأموال.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold text-2xl flex items-center justify-center mx-auto mb-4 border border-gold/20">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-white mb-2">خيار إعادة الشراء</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        نقدم في بعض المشاريع اتفاقية إعادة شراء العقار بربح مضمون بعد انقضاء فترة محددة حسب رغبتك.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Steps to Invest (خطوات الاستثمار) -->
-    <section class="py-16 bg-dark-950 border-t border-gold/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-gold text-xs font-bold uppercase tracking-widest">خطوات سهلة ومباشرة</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">كيف تبدأ استثمارك معنا في 4 خطوات؟</h2>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-5 bg-dark-900 rounded-2xl border border-gold/15 relative">
-                    <div class="text-gold font-playfair font-black text-2xl mb-2">01.</div>
-                    <h4 class="text-white font-bold text-sm mb-1">اختيار الوحدة والبلد</h4>
-                    <p class="text-slate-400 text-xs">استشارة مجانية لاختيار العقار الأنسب لميزانيتك وأهدافك في جورجيا أو باكو أو غيرها.</p>
-                </div>
-                <div class="p-5 bg-dark-900 rounded-2xl border border-gold/15 relative">
-                    <div class="text-gold font-playfair font-black text-2xl mb-2">02.</div>
-                    <h4 class="text-white font-bold text-sm mb-1">دفع 20% دفعة أولى</h4>
-                    <p class="text-slate-400 text-xs">سداد مقدم الحجز وتثبيت سعر الوحدة مع توقيع عقد الشراء المبدئي والتقسيط المريح.</p>
-                </div>
-                <div class="p-5 bg-dark-900 rounded-2xl border border-gold/15 relative">
-                    <div class="text-gold font-playfair font-black text-2xl mb-2">03.</div>
-                    <h4 class="text-white font-bold text-sm mb-1">استخراج التمويل والتملك</h4>
-                    <p class="text-slate-400 text-xs">إتمام إجراءات التمويل البنكي حتى 60% واستخراج سند الطابو الرسمي باسمك مع تملك فوري.</p>
-                </div>
-                <div class="p-5 bg-dark-900 rounded-2xl border border-gold/15 relative">
-                    <div class="text-gold font-playfair font-black text-2xl mb-2">04.</div>
-                    <h4 class="text-white font-bold text-sm mb-1">توقيع عقد الإدارة لـ 10 سنوات</h4>
-                    <p class="text-slate-400 text-xs">تسليم العقار لشركة الإدارة والبدء باستلام الأرباح الشهرية الصافية في حسابك البنكي.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Consultation / Booking Form Section -->
-    <section id="contact" class="py-20 bg-dark-900 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-card rounded-3xl p-8 sm:p-12 border-2 border-gold/30">
-                <div class="text-center max-w-xl mx-auto mb-8">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full urgency-badge text-white text-xs font-bold mb-3">
-                        <span class="w-2 h-2 rounded-full bg-white dot-flash"></span>
-                        <span>مستشارونا متاحون للرد الفوري على مدار 24 ساعة</span>
-                    </div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">احجز استشارتك العقارية المجانية الآن</h2>
-                    <p class="text-slate-400 text-xs sm:text-sm mt-2">اترك بياناتك وسيتواصل معك مستشار الاستثمار الدولي لشرح خطط التمويل وإتاحة الوحدات المتبقية.</p>
-                </div>
-
-                <form onsubmit="handleLeadSubmit(event)" class="space-y-4">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-1">الاسم الكامل *</label>
-                            <input type="text" required placeholder="مثال: محمد العمري" class="w-full bg-dark-950 border border-gold/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-1">رقم الهاتف (مع رمز الدولة / واتساب) *</label>
-                            <input type="tel" required placeholder="+966 50 000 0000" class="w-full bg-dark-950 border border-gold/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold" dir="ltr">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-1">الدولة المهتم بالاستثمار بها *</label>
-                            <select class="w-full bg-dark-950 border border-gold/25 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-gold">
-                                <option value="georgia">جورجيا (تبليسي / باتومي)</option>
-                                <option value="baku">باكو (أذربيجان)</option>
-                                <option value="istanbul">إسطنبول (تركيا)</option>
-                                <option value="all">جميع الخيارات الاستثمارية المتاحة</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-1">الميزانية الاستثمارية التقريبية</label>
-                            <select class="w-full bg-dark-950 border border-gold/25 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-gold">
-                                <option value="50k-80k">$50,000 - $80,000 (دفعة أولى تبدأ من $10,000)</option>
-                                <option value="80k-150k">$80,000 - $150,000</option>
-                                <option value="150k+">$150,000 فأكثر (فلل ووحدات فندقية كبرى)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-slate-300 mb-1">ملاحظات إضافية أو استفسار خاص</label>
-                        <textarea rows="3" placeholder="هل ترغب في معرفة تفاصيل التمويل البنكي حتى 60% أو عقد الإدارة لـ 10 سنوات؟" class="w-full bg-dark-950 border border-gold/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full py-4 rounded-xl gold-button-gradient text-sm font-bold shadow-xl flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <span>إرسال الطلب وحجز أولوية الاستشارة</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark-950 border-t border-gold/20 pt-16 pb-12 text-slate-400 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                <!-- Brand Info -->
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-gold flex items-center justify-center text-dark-950 font-bold">
-                            <i class="fa-solid fa-hotel"></i>
-                        </div>
-                        <div>
-                            <span class="font-cinzel text-lg font-black text-gold-gradient">ROWSHAN HOUSE</span>
-                            <span class="block text-[10px] text-slate-500">المركز العقاري الدولي</span>
-                        </div>
-                    </div>
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        المركز الرائد لتسويق وإدارة الاستثمارات العقارية الفاخرة في جورجيا، باكو، إسطنبول، ودبي، مع أفضل خطط التمويل والعوائد الإيجارية المضمونة.
-                    </p>
-                </div>
-
-                <!-- Fast Links -->
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-4 border-r-2 border-gold pr-2">روابط سريعة</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="#projects" class="hover:text-gold transition">المشاريع المتاحة في جورجيا</a></li>
-                        <li><a href="#projects" class="hover:text-gold transition">مشاريع وعقارات باكو</a></li>
-                        <li><a href="#calculator" class="hover:text-gold transition">حاسبة العائد الاستثماري</a></li>
-                        <li><a href="#financing" class="hover:text-gold transition">تمويل بنكي حتى 60%</a></li>
-                        <li><a href="#management" class="hover:text-gold transition">عقد إدارة العقار 10 سنوات</a></li>
-                    </ul>
-                </div>
-
-                <!-- Countries & Hubs -->
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-4 border-r-2 border-gold pr-2">وجهاتنا الاستثمارية</h4>
-                    <ul class="space-y-2.5">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold text-xs"></i> تبليسي وباتومي (جورجيا)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold text-xs"></i> باكو وبحر قزوين (أذربيجان)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold text-xs"></i> إسطنبول والبوسفور (تركيا)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold text-xs"></i> دبي وأبوظبي (الإمارات)</li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-4 border-r-2 border-gold pr-2">تواصل مباشر</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-2.5">
-                            <i class="fa-brands fa-whatsapp text-gold text-base"></i>
-                            <span dir="ltr">+995 555 000 000 / +971 50 000 000</span>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-envelope text-gold text-sm"></i>
-                            <span>invest@rowshanhouse.com</span>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-clock text-gold text-sm"></i>
-                            <span>خدمة العملاء: على مدار الساعة 24/7</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-gold/10 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
-                <div>جميع الحقوق محفوظة &copy; 2025 روشن هاوس | المركز العقاري الدولي.</div>
-                <div class="flex gap-4">
-                    <span>الشروط والأحكام</span>
-                    <span>سياسة الخصوصية</span>
-                    <span>الترخيص العقاري الدولي</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Fixed Live Notification Toast (Live Sold & Booking Alerts) -->
-    <div id="liveToast" class="toast-bubble fixed bottom-6 left-6 z-50 max-w-sm bg-dark-900 border border-gold/40 p-4 rounded-2xl shadow-2xl flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 flex-shrink-0">
-            <i class="fa-solid fa-bell dot-flash"></i>
-        </div>
-        <div>
-            <div class="text-xs font-bold text-white flex items-center gap-1.5">
-                <span id="toastBuyerName">أبو فيصل (السعودية)</span>
-                <span class="text-[10px] bg-red-500/20 text-red-300 px-1.5 py-0.5 rounded font-normal">تم الشراء الآن</span>
-            </div>
-            <div class="text-[11px] text-slate-300 mt-0.5" id="toastProjectName">حجز شقة فندقية بمقدم 20% في تبليسي (باقي وحدتان فقط)</div>
-        </div>
+    <div class="flex gap-12 shrink-0 items-center" aria-hidden="true">
+      <span><i class="fa-solid fa-fire text-red-800"></i> عرض حصري: دفعة أولى 20% فقط والباقي تقسيط حتى 3 سنوات</span>
+      <span><i class="fa-solid fa-building-columns"></i> تمويل بنكي حتى 60% من قيمة العقار — القرض حر التصرف والتملك فوري</span>
+      <span><i class="fa-solid fa-shield-halved"></i> عائد شهري مضمون بعقد إدارة مؤجرة 10 سنوات وأكثر</span>
+      <span><i class="fa-solid fa-chart-line"></i> عوائد تصل إلى 10% سنوياً في جورجيا وباكو</span>
+      <span><i class="fa-solid fa-fire text-red-800"></i> آخر الوحدات في باتومي سي تاون — 3 وحدات فقط!</span>
     </div>
+  </div>
+</div>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/995555000000?text=مرحبا،%20أود%20الاستفسار%20عن%20المشاريع%20المتاحة%20في%20روشن%20هاوس%20والتمويل" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center text-2xl shadow-2xl transition hover:scale-110">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full dot-flash"></span>
+<!-- ===== Navbar ===== -->
+<header id="navbar" class="sticky top-0 z-40 transition-all duration-300 border-b border-transparent">
+  <nav class="max-w-7xl mx-auto px-5 lg:px-8 h-[74px] flex items-center justify-between gap-4">
+    <a href="#hero" class="flex items-center gap-3 group">
+      <div class="w-11 h-11 rounded-2xl gold-button-gradient flex items-center justify-center text-xl shadow-lg group-hover:rotate-6 transition-transform">
+        <i class="fa-solid fa-house-chimney"></i>
+      </div>
+      <div class="leading-tight">
+        <div class="font-black text-xl text-gold-gradient">ROSHN HOUSE</div>
+        <div class="text-[11px] tracking-[.3em] text-gold/80">المركز العقاري الفاخر</div>
+      </div>
     </a>
 
-    <!-- JavaScript logic -->
-    <script>
-        // State for ROI Calculator
-        let currentRoiRate = 15; // default 15% for Georgia
+    <ul class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-slate-200">
+      <li><a href="#hero" class="hover:text-gold transition">الرئيسية</a></li>
+      <li><a href="#projects" class="hover:text-gold transition">المشاريع</a></li>
+      <li><a href="#financing" class="hover:text-gold transition">التمويل</a></li>
+      <li><a href="#management" class="hover:text-gold transition">العائد المضمون</a></li>
+      <li><a href="#calculator" class="hover:text-gold transition">حاسبة العائد</a></li>
+      <li><a href="#faq" class="hover:text-gold transition">الأسئلة</a></li>
+    </ul>
 
-        function setCalcLocation(country, roiRate) {
-            currentRoiRate = roiRate;
-            
-            // Toggle active classes on location buttons
-            document.querySelectorAll('.calc-loc-btn').forEach(btn => {
-                btn.classList.remove('active', 'bg-gold', 'text-dark-950');
-                btn.classList.add('bg-dark-900', 'text-slate-300');
-            });
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden sm:inline-flex gold-button-gradient font-bold px-5 py-2.5 rounded-xl text-sm items-center gap-2">
+        <i class="fa-solid fa-phone-volume"></i> استشارة مجانية
+      </a>
+      <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-xl border border-gold/30 text-gold" aria-label="القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
 
-            if(country === 'georgia') {
-                const b = document.getElementById('btnGeo');
-                b.classList.add('active', 'bg-gold', 'text-dark-950');
-                b.classList.remove('bg-dark-900', 'text-slate-300');
-            } else if(country === 'baku') {
-                const b = document.getElementById('btnBaku');
-                b.classList.add('active', 'bg-gold', 'text-dark-950');
-                b.classList.remove('bg-dark-900', 'text-slate-300');
-            } else if(country === 'istanbul') {
-                const b = document.getElementById('btnIst');
-                b.classList.add('active', 'bg-gold', 'text-dark-950');
-                b.classList.remove('bg-dark-900', 'text-slate-300');
-            }
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden hidden bg-dark-800/95 backdrop-blur-xl border-t border-gold/10">
+    <ul class="px-6 py-4 space-y-1 text-[15px]">
+      <li><a href="#hero" class="block py-2.5 hover:text-gold">الرئيسية</a></li>
+      <li><a href="#projects" class="block py-2.5 hover:text-gold">المشاريع</a></li>
+      <li><a href="#financing" class="block py-2.5 hover:text-gold">التميل العقاري</a></li>
+      <li><a href="#management" class="block py-2.5 hover:text-gold">العائد المضمون</a></li>
+      <li><a href="#calculator" class="block py-2.5 hover:text-gold">حاسبة العائد</a></li>
+      <li><a href="#faq" class="block py-2.5 hover:text-gold">الأسئلة الشائعة</a></li>
+      <li><a href="#contact" class="block py-2.5 text-gold font-bold">استشارة مجانية</a></li>
+    </ul>
+  </div>
+</header>
 
-            calculateROI();
-        }
+<!-- ===== Hero ===== -->
+<section id="hero" class="relative pt-14 pb-20 lg:pt-20 lg:pb-28 overflow-hidden scroll-mt-24">
+  <div class="hero-grid-lines absolute inset-0 pointer-events-none"></div>
+  <div class="orb w-[420px] h-[420px] bg-[#c9a84c] -top-40 -right-40 float-slow"></div>
+  <div class="orb w-[380px] h-[380px] bg-[#6b4fd8] bottom-0 -left-40 float-slower" style="opacity:.25"></div>
 
-        function calculateROI() {
-            const propVal = parseFloat(document.getElementById('propValRange').value);
-            const downPercent = parseFloat(document.getElementById('downPercentRange').value);
-            const contractDuration = parseInt(document.getElementById('mgmtDuration').value);
-            const isBankFinancing = document.getElementById('bankFinancingToggle').checked;
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative grid lg:grid-cols-2 gap-14 items-center">
+    <!-- Text -->
+    <div class="text-center lg:text-right">
+      <span class="section-eyebrow mb-6"><i class="fa-solid fa-globe"></i> استثمار عقاري دولي فاخر</span>
+      <h1 class="font-black text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.25] mt-6">
+        روشن هاوس — بوابتك إلى
+        <span class="text-gold-gradient">الثروة العقارية</span>
+        العالمية
+      </h1>
+      <p class="text-slate-300/90 text-lg leading-relaxed mt-6 max-w-xl mx-auto lg:mx-0">
+        مشاريع مختارة بعناية في <span class="text-gold font-bold">جورجيا، باكو، إسطنبول، دبي وإسبانيا</span>.
+        دفعة أولى <span class="text-gold font-bold">20%</span> فقط، تمويل بنكي حتى <span class="text-gold font-bold">60%</span>،
+        وعائد شهري <span class="text-gold font-bold">مضمون</span> بعقد إدارة يصل إلى 10 سنوات.
+      </p>
 
-            // Labels update
-            document.getElementById('propValLabel').innerText = '$' + propVal.toLocaleString();
-            document.getElementById('downPercentLabel').innerText = downPercent + '%';
-            document.getElementById('downPctText').innerText = downPercent + '%';
-            document.getElementById('contractYearsText').innerText = contractDuration;
+      <div class="flex flex-wrap gap-4 justify-center lg:justify-start mt-9">
+        <a href="#projects" class="gold-button-gradient font-bold px-8 py-4 rounded-2xl inline-flex items-center gap-2">
+          <i class="fa-solid fa-city"></i> تصفح المشاريع
+        </a>
+        <a href="#calculator" class="border border-gold/40 text-gold hover:bg-gold/10 font-bold px-8 py-4 rounded-2xl inline-flex items-center gap-2 transition">
+          <i class="fa-solid fa-calculator"></i> احسب عائدك الآن
+        </a>
+      </div>
 
-            // Financial math
-            const downPaymentValue = propVal * (downPercent / 100);
-            const remainingValue = propVal - downPaymentValue;
+      <div class="flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-4 mt-10 text-sm text-slate-300">
+        <div class="flex items-center gap-2"><i class="fa-solid fa-star text-gold"></i> تقييم <b class="text-white">4.9/5</b> من +1,200 مستثمر</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-earth-americas text-gold"></i> <b class="text-white">5</b> دول استثمارية</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-file-shield text-gold"></i> تملك <b class="text-white">فوري</b> وقانوني 100%</div>
+      </div>
+    </div>
 
-            // Annual Net ROI based on property value
-            const annualProfit = propVal * (currentRoiRate / 100);
-            const monthlyProfit = annualProfit / 12;
-            const totalContractProfit = annualProfit * contractDuration;
-            const capitalGrowth = propVal * 0.09 * contractDuration; // 9% avg yearly capital appreciation
+    <!-- Featured project card -->
+    <div class="relative float-slow">
+      <div class="glass-card rounded-[28px] overflow-hidden max-w-md mx-auto shadow-2xl">
+        <div class="relative h-56">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=60" alt="باتومي سي تاون" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">
+            <i class="fa-solid fa-location-dot"></i> جورجيا — باتومي
+          </span>
+          <span class="urgency-badge absolute top-4 end-4 text-xs font-black text-white px-3 py-1.5 rounded-full flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-white text-flash"></span> باقي 3 وحدات فقط
+          </span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div>
+              <div class="text-xs text-slate-300">تبدأ الأسعار من</div>
+              <div class="text-2xl font-black text-gold-gradient">$58,000</div>
+            </div>
+            <div class="text-xs font-bold bg-gold/15 border border-gold/30 text-gold-light px-3 py-1.5 rounded-full">
+              عائد 10.2% سنوياً
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-xl">باتومي سي تاون <span class="text-gold">Batumi Sea Town</span></h3>
+          <p class="text-sm text-slate-400 mt-1"><i class="fa-solid fa-water"></i> على بعد 150م من البحر الأسود — فندقي مرخّص</p>
 
-            // Update DOM output
-            document.getElementById('downValOut').innerText = '$' + Math.round(downPaymentValue).toLocaleString();
-            document.getElementById('remainingValOut').innerText = '$' + Math.round(remainingValue).toLocaleString() + (isBankFinancing ? ' (تمويل بنكي متاح)' : ' (أقساط)');
-            document.getElementById('roiPctOut').innerText = currentRoiRate.toFixed(1) + '%';
-            document.getElementById('annualProfitOut').innerText = '$' + Math.round(annualProfit).toLocaleString() + ' / سنوياً';
-            document.getElementById('monthlyProfitOut').innerText = '$' + Math.round(monthlyProfit).toLocaleString() + ' / شهر';
-            document.getElementById('totalContractProfitOut').innerText = '$' + Math.round(totalContractProfit).toLocaleString();
-            document.getElementById('capitalGrowthOut').innerText = '+$' + Math.round(capitalGrowth).toLocaleString();
+          <div class="mt-5">
+            <div class="flex justify-between text-xs mb-2">
+              <span class="text-red-300 font-bold text-flash"><i class="fa-solid fa-triangle-exclamation"></i> آ hurry — تم بيع 94%</span>
+              <span class="text-slate-400">3 / 52 وحدة متبقية</span>
+            </div>
+            <div class="units-progress danger"><span data-progress="94"></span></div>
+          </div>
 
-            // Dynamic WhatsApp CTA
-            const msg = `أريد تثبيت خطة استثمارية لعقار بقيمة $${propVal.toLocaleString()} مع دفعة أولى ${downPercent}% وعقد تشغيل ${contractDuration} سنوات بعائد شهري $${Math.round(monthlyProfit).toLocaleString()}`;
-            document.getElementById('calcWhatsappLink').href = `https://wa.me/995555000000?text=${encodeURIComponent(msg)}`;
-        }
+          <div class="mt-6 text-center">
+            <div class="text-xs text-slate-400 mb-3">ينتهي عرض الحجز التفضيلي خلال:</div>
+            <div class="flex justify-center gap-2" id="heroCountdown">
+              <div class="count-box"><div class="count-num" id="cd-d">--</div><div class="text-[10px] text-slate-400">يوم</div></div>
+              <div class="count-box"><div class="count-num" id="cd-h">--</div><div class="text-[10px] text-slate-400">ساعة</div></div>
+              <div class="count-box"><div class="count-num" id="cd-m">--</div><div class="text-[10px] text-slate-400">دقيقة</div></div>
+              <div class="count-box"><div class="count-num" id="cd-s">--</div><div class="text-[10px] text-slate-400">ثانية</div></div>
+            </div>
+          </div>
 
-        // Project filter logic
-        function filterProjects(country) {
-            const cards = document.querySelectorAll('.project-card');
-            const btns = document.querySelectorAll('.project-tab-btn');
+          <a href="#contact" class="gold-button-gradient w-full mt-6 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2">
+            <i class="fa-solid fa-bolt"></i> احجز وحدتك قبل النفاد
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            btns.forEach(btn => {
-                btn.classList.remove('bg-gold', 'text-dark-950');
-                btn.classList.add('bg-dark-800', 'text-slate-300');
-            });
-            event.target.classList.add('bg-gold', 'text-dark-950');
-            event.target.classList.remove('bg-dark-800', 'text-slate-300');
+  <!-- Stats -->
+  <div class="max-w-6xl mx-auto px-5 lg:px-8 mt-20">
+    <div class="glass-card rounded-3xl grid grid-cols-2 lg:grid-cols-4 divide-x divide-x-reverse divide-gold/10">
+      <div class="p-7 text-center">
+        <div class="text-3xl font-black text-gold-gradient"><span class="counter" data-target="1200">0</span>+</div>
+        <div class="text-sm text-slate-400 mt-1">مستثمر سعيد</div>
+      </div>
+      <div class="p-7 text-center">
+        <div class="text-3xl font-black text-gold-gradient"><span class="counter" data-target="38">0</span></div>
+        <div class="text-sm text-slate-400 mt-1">مشروعاً فاخراً</div>
+      </div>
+      <div class="p-7 text-center">
+        <div class="text-3xl font-black text-gold-gradient"><span class="counter" data-target="9.8" data-decimals="1">0</span>%</div>
+        <div class="text-sm text-slate-400 mt-1">متوسط العائد السنوي</div>
+      </div>
+      <div class="p-7 text-center">
+        <div class="text-3xl font-black text-gold-gradient"><span class="counter" data-target="12">0</span>+ سنة</div>
+        <div class="text-sm text-slate-400 mt-1">خبرة دولية</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            cards.forEach(card => {
-                if (country === 'all' || card.getAttribute('data-country') === country) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
+<!-- ===== Countries strip ===== -->
+<section class="py-10 border-y border-gold/10 bg-dark-800/50">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+    <div class="reveal"><div class="text-2xl mb-1">🇬🇪</div><div class="font-bold">جورجيا</div><div class="text-xs text-gold">عائد 8 – 10%</div></div>
+    <div class="reveal"><div class="text-2xl mb-1">🇦🇿</div><div class="font-bold">باكو</div><div class="text-xs text-gold">عائد 8 – 9.5%</div></div>
+    <div class="reveal"><div class="text-2xl mb-1">🇹🇷</div><div class="font-bold">إسطنبول</div><div class="text-xs text-gold">عائد 6 – 8%</div></div>
+    <div class="reveal"><div class="text-2xl mb-1">🇦🇪</div><div class="font-bold">دبي</div><div class="text-xs text-gold">عائد 6 – 8%</div></div>
+    <div class="reveal"><div class="text-2xl mb-1">🇪🇸</div><div class="font-bold">إسبانيا</div><div class="text-xs text-gold">عائد 5 – 7%</div></div>
+  </div>
+</section>
 
-        // Mobile Menu Toggle
-        const mobileBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<!-- ===== Projects ===== -->
+<section id="projects" class="py-24 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="section-eyebrow"><i class="fa-solid fa-city"></i> محفظة مشاريعنا</span>
+      <h2 class="text-4xl font-black mt-5">مشاريع <span class="text-gold-gradient">مختارة بعناية</span> حول العالم</h2>
+      <div class="gold-divider mt-6"></div>
+      <p class="text-slate-400 mt-6 max-w-2xl mx-auto">كل مشروع يخضع لدراسة جدوى صارمة: موقع استراتيجي، مطوّر موثوق، عائد إيجاري مرتفع، وقابلية عالية لإعادة البيع.</p>
+    </div>
 
-        // Form Submit
-        function handleLeadSubmit(e) {
-            e.preventDefault();
-            alert('شكراً لتواصلك مع روشن هاوس! تم استلام طلبك بنجاح وسيتواصل معك مستشارك العقاري المختص خلال دقائق لتزويدك ببيانات الوحدات المتاحة وحسابات العائد.');
-            e.target.reset();
-        }
+    <!-- Filters -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12 reveal" id="filterBar">
+      <button class="filter-btn active px-5 py-2 rounded-full text-sm font-bold" data-filter="all">الكل</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-bold" data-filter="georgia">جورجيا</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-bold" data-filter="baku">باكو</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-bold" data-filter="istanbul">إسطنبول</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-bold" data-filter="dubai">دبي</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-bold" data-filter="spain">إسبانيا</button>
+    </div>
 
-        // Live Dynamic Toast Notifications
-        const fakeBuyers = [
-            { name: "خالد بن سلطان (الرياض)", project: "حجز شقة في برج تبليسي بمقدم 20% (باقي وحدتان فقط)" },
-            { name: "طارق المنصوري (دبي)", project: "إبرام عقد إدارة 10 سنوات لمشروع كاسبيان باكو" },
-            { name: "سعد الهاجري (الكويت)", project: "تمويل بنكي 60% لشقة فندقية في باتومي" },
-            { name: "عبدالله الشمري (الدوحة)", project: "حجز آخر فيلا في تبليسي هيلز (مباع 99%)" },
-            { name: "فهد الدوسري (جدة)", project: "شراء وحدة في إسطنبول بتملك فوري 100%" }
-        ];
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7" id="projectsGrid">
 
-        let toastIdx = 0;
-        function showLiveToast() {
-            const toast = document.getElementById('liveToast');
-            if(!toast) return;
-            const data = fakeBuyers[toastIdx % fakeBuyers.length];
-            document.getElementById('toastBuyerName').innerText = data.name;
-            document.getElementById('toastProjectName').innerText = data.project;
+      <!-- 1. Batumi — 3 units left -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="georgia">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=60" alt="باتومي سي تاون" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇬🇪 جورجيا — باتومي</span>
+          <span class="urgency-badge absolute top-4 end-4 text-[11px] font-black text-white px-3 py-1.5 rounded-full">باقي 3 وحدات فقط</span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">تبدأ من</div><div class="text-2xl font-black text-gold-gradient">$58,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 10.2%</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">باتومي سي تاون</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-water text-gold"></i> 150م من البحر الأسود • فندقي مرخّص</p>
+          <div class="flex gap-2 mt-4 text-[11px] text-slate-300">
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-bed"></i> 1–3 غرف</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-ruler-combined"></i> 38–105م²</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-percent"></i> 20% مقدم</span>
+          </div>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2">
+              <span class="text-red-300 font-bold text-flash">الوحدات تنفد بسرعة!</span><span class="text-slate-400">تم بيع 94%</span>
+            </div>
+            <div class="units-progress danger"><span data-progress="94"></span></div>
+          </div>
+          <a href="#contact" class="gold-button-gradient w-full mt-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-sm"><i class="fa-solid fa-bolt"></i> احجز قبل النفاد</a>
+        </div>
+      </article>
 
-            toast.classList.add('show');
+      <!-- 2. Baku -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="baku">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=60" alt="برج روشن ريزيدنس — باكو" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇦🇿 باكو — وسط المدينة</span>
+          <span class="absolute top-4 end-4 text-[11px] font-black bg-emerald-600/90 border border-emerald-300/40 text-white px-3 py-1.5 rounded-full">متاح الآن</span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">تبدأ من</div><div class="text-2xl font-black text-gold-gradient">$72,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 9.4%</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">برج روشن ريزيدنس</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-tower-observation text-gold"></i> إطلالة على فلام تاورز • تشطيب فندقي</p>
+          <div class="flex gap-2 mt-4 text-[11px] text-slate-300">
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-bed"></i> 1–3 غرف</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-ruler-combined"></i> 45–120م²</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-building-columns"></i> تمويل 60%</span>
+          </div>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2"><span class="text-slate-400">إقبال مرتفع</span><span class="text-slate-400">تم بيع 68%</span></div>
+            <div class="units-progress"><span data-progress="68"></span></div>
+          </div>
+          <a href="#contact" class="w-full mt-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-sm border border-gold/40 text-gold hover:bg-gold/10 transition">تفاصيل المشروع <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </article>
 
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 4500);
+      <!-- 3. Dubai -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="dubai">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=60" alt="الذهب هيفن — دبي" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇦🇪 دبي — دبي مارينا</span>
+          <span class="absolute top-4 end-4 text-[11px] font-black bg-emerald-600/90 border border-emerald-300/40 text-white px-3 py-1.5 rounded-full">متاح الآن</span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">تبدأ من</div><div class="text-2xl font-black text-gold-gradient">$210,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 7.8% + إقامة ذهبية</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">الذهب هيفن Golden Haven</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-umbrella-beach text-gold"></i> إقامة ذهبية 10 سنوات للمستثمر وعائلته</p>
+          <div class="flex gap-2 mt-4 text-[11px] text-slate-300">
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-bed"></i> 1–3 غرف</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-ruler-combined"></i> 55–180م²</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-percent"></i> 20% مقدم</span>
+          </div>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2"><span class="text-slate-400">مبيعات قوية</span><span class="text-slate-400">تم بيع 55%</span></div>
+            <div class="units-progress"><span data-progress="55"></span></div>
+          </div>
+          <a href="#contact" class="w-full mt-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-sm border border-gold/40 text-gold hover:bg-gold/10 transition">تفاصيل المشروع <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </article>
 
-            toastIdx++;
-        }
+      <!-- 4. Istanbul — SOLD OUT -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="istanbul">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=800&q=60" alt="بورفور هيفن — إسطنبول" class="w-full h-full object-cover grayscale transition duration-700" loading="lazy">
+          <div class="absolute inset-0 bg-black/55"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇹🇷 إسطنبول — البوسفور</span>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-flash border-4 border-red-500 text-red-400 text-2xl font-black px-6 py-2 rounded-xl tracking-[.25em] bg-black/50" style="transform:rotate(-10deg)">مُباع بالكامل</span>
+          </div>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">كانت تبدأ من</div><div class="text-2xl font-black text-slate-400 line-through decoration-red-500/70">$135,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 7.5%</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">بورفور هيفن Bosphor Haven</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-ship text-gold"></i> وحدات بإطلالة مباشرة على البوسفور</p>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2">
+              <span class="text-slate-500">نفدت جميع الوحدات خلال 3 أسابيع</span><span class="text-red-400 font-bold">100%</span>
+            </div>
+            <div class="units-progress danger"><span data-progress="100"></span></div>
+          </div>
+          <button disabled class="w-full mt-6 py-3 rounded-xl font-bold text-sm bg-dark-600 text-slate-500 cursor-not-allowed">
+            <i class="fa-solid fa-ban"></i> نفدت الوحدات — انضم لقائمة الانتظار
+          </button>
+        </div>
+      </article>
 
-        // Initial setup
-        window.addEventListener('DOMContentLoaded', () => {
-            calculateROI();
-            setTimeout(showLiveToast, 3000);
-            setInterval(showLiveToast, 12000);
-        });
-    </script>
+      <!-- 5. Spain -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="spain">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60" alt="مدريد لايف ريزيدنس — إسبانيا" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇪🇸 إسبانيا — مدريد</span>
+          <span class="absolute top-4 end-4 text-[11px] font-black bg-emerald-600/90 border border-emerald-300/40 text-white px-3 py-1.5 rounded-full">متاح الآن</span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">تبدأ من</div><div class="text-2xl font-black text-gold-gradient">$95,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 6.2% + إقامة أوروبية</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">مدريد لايف ريزيدنس</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-passport text-gold"></i> مسار الإقامة الأوروبية الذهبية</p>
+          <div class="flex gap-2 mt-4 text-[11px] text-slate-300">
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-bed"></i> 1–3 غرف</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-ruler-combined"></i> 50–130م²</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-building-columns"></i> تمويل 60%</span>
+          </div>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2"><span class="text-slate-400">إطلاق جديد</span><span class="text-slate-400">تم بيع 32%</span></div>
+            <div class="units-progress"><span data-progress="32"></span></div>
+          </div>
+          <a href="#contact" class="w-full mt-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-sm border border-gold/40 text-gold hover:bg-gold/10 transition">تفاصيل المشروع <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </article>
+
+      <!-- 6. Tbilisi — 7 units -->
+      <article class="project-card glass-card rounded-3xl overflow-hidden reveal" data-country="georgia">
+        <div class="relative h-60 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=60" alt="تبليسي هايتس — جورجيا" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+          <span class="absolute top-4 start-4 text-xs font-bold bg-dark-900/80 border border-gold/30 text-gold px-3 py-1.5 rounded-full">🇬🇪 جورجيا — تبليسي</span>
+          <span class="urgency-badge absolute top-4 end-4 text-[11px] font-black text-white px-3 py-1.5 rounded-full">باقي 7 وحدات فقط</span>
+          <div class="absolute bottom-4 start-4 end-4 flex items-end justify-between">
+            <div><div class="text-[11px] text-slate-300">تبدأ من</div><div class="text-2xl font-black text-gold-gradient">$47,000</div></div>
+            <span class="text-[11px] font-bold bg-gold/15 border border-gold/30 text-gold-light px-2.5 py-1 rounded-full">عائد 9.8%</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-black text-lg">تبليسي هايتس Tbilisi Heights</h3>
+          <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-mountain text-gold"></i> إطلالة بانورامية • منطقة Vera الراقية</p>
+          <div class="flex gap-2 mt-4 text-[11px] text-slate-300">
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-bed"></i> استوديو–2 غرف</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-ruler-combined"></i> 32–75م²</span>
+            <span class="bg-dark-600 border border-gold/10 rounded-lg px-2.5 py-1"><i class="fa-solid fa-percent"></i> 20% مقدم</span>
+          </div>
+          <div class="mt-5">
+            <div class="flex justify-between text-[11px] mb-2">
+              <span class="text-red-300 font-bold text-flash">سارع — الكمية محدودة</span><span class="text-slate-400">تم بيع 88%</span>
+            </div>
+            <div class="units-progress danger"><span data-progress="88"></span></div>
+          </div>
+          <a href="#contact" class="gold-button-gradient w-full mt-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-sm"><i class="fa-solid fa-bolt"></i> احجز قبل النفاد</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Financing ===== -->
+<section id="financing" class="py-24 relative overflow-hidden scroll-mt-24 bg-dark-800/40 border-y border-gold/10">
+  <div class="orb w-[300px] h-[300px] bg-[#c9a84c] top-10 -left-32"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="text-center mb-14 reveal">
+      <span class="section-eyebrow"><i class="fa-solid fa-building-columns"></i> خطة التمويل الذكية</span>
+      <h2 class="text-4xl font-black mt-5">امتلك عقارك بـ <span class="text-gold-gradient">20% فقط</span> وتمويل حتى 60%</h2>
+      <div class="gold-divider mt-6"></div>
+      <p class="text-slate-400 mt-6 max-w-2xl mx-auto">حلول تمويلية مرنة بالتعاون مع بنوك محلية ودولية — القرض <b class="text-gold">حر التصرف</b> والتملك <b class="text-gold">فوري</b> باسمك من اليوم الأول.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-7 mb-14">
+      <div class="glass-card rounded-3xl p-8 text-center reveal">
+        <div class="w-16 h-16 mx-auto rounded-2xl gold-button-gradient flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+        <div class="text-5xl font-black text-gold-gradient">20%</div>
+        <h3 class="font-black text-xl mt-3">دفعة أولى فقط</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">ادفع 20% عند التوقيع وابدأ رحلة التملك فوراً — بدون تعقيد وبأقل رأس مال ممكن.</p>
+      </div>
+      <div class="glass-card rounded-3xl p-8 text-center reveal border-gold/40">
+        <div class="w-16 h-16 mx-auto rounded-2xl gold-button-gradient flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="text-5xl font-black text-gold-gradient">60%</div>
+        <h3 class="font-black text-xl mt-3">تمويل بنكي</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">حتى 60% من قيمة العقار تمويلاً بنكياً. القرض <b class="text-gold">حر التصرف</b> — استخدمه كما تشاء.</p>
+      </div>
+      <div class="glass-card rounded-3xl p-8 text-center reveal">
+        <div class="w-16 h-16 mx-auto rounded-2xl gold-button-gradient flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="text-4xl font-black text-gold-gradient">3+ سنوات</div>
+        <h3 class="font-black text-xl mt-3">تقسيط مريح</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">النسبة المتبقية تُقسَّط على 3 سنوات وأكثر بدون ضغوط — وأقساط غالباً يغطيها الدخل الإيجاري.</p>
+      </div>
+    </div>
+
+    <!-- Payment structure visual -->
+    <div class="glass-card rounded-3xl p-8 lg:p-10 reveal">
+      <h3 class="font-black text-xl mb-2 text-center">هيكل السداد على عقار بقيمة <span class="text-gold-gradient">$100,000</span></h3>
+      <p class="text-xs text-slate-500 text-center mb-8">مثال توضيحي — يُخصَّص حسب مشروعك</p>
+
+      <div class="flex h-16 rounded-2xl overflow-hidden border border-gold/20 text-xs font-black">
+        <div class="pay-seg flex flex-col items-center justify-center text-black" style="width:20%; background:linear-gradient(135deg,#ecd178,#cfa33e);">
+          <span>$20,000</span><span class="text-[10px] font-bold">دفعة أولى 20%</span>
+        </div>
+        <div class="pay-seg flex flex-col items-center justify-center text-black" style="width:60%; background:linear-gradient(135deg,#b98f35,#8a6a20);">
+          <span>$60,000</span><span class="text-[10px] font-bold">تمويل بنكي 60%</span>
+        </div>
+        <div class="pay-seg flex flex-col items-center justify-center text-gold" style="width:20%; background:#1a1620;">
+          <span>$20,000</span><span class="text-[10px] font-bold">تقسيط 3 سنوات</span>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-9 text-sm">
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i><span>التملك <b>فوري</b> باسمك في السجل العقاري</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i><span>القرض <b>حر التصرف</b> — بدون قيود استخدام</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i><span>بدون كفيل أو تعقيدات مصرفية</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i><span>إجراءات قانونية كاملة نتولاها نيابةً عنك</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Management / Guaranteed return ===== -->
+<section id="management" class="py-24 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <span class="section-eyebrow"><i class="fa-solid fa-shield-halved"></i> برنامج الإدارة المؤجرة المضمون</span>
+      <h2 class="text-4xl font-black mt-5 leading-snug">عائد شهري <span class="text-gold-gradient">مضمون</span> بعقد يصل إلى <span class="text-gold-gradient">10 سنوات</span> وأكثر</h2>
+      <p class="text-slate-400 mt-6 leading-relaxed">
+        اتكئ واسترح — نحن نتولى إدارة عقارك بالكامل: التأجير، الصيانة، التحصيل، والتعامل مع المستأجرين.
+        وأنت تستلم <b class="text-gold-light">عائداً شهرياً ثابتاً مضموناً</b> يُحوَّل مباشرة إلى حسابك البنكي، أينما كنت في العالم.
+      </p>
+
+      <div class="space-y-4 mt-8">
+        <div class="flex items-start gap-4 glass-card rounded-2xl p-4">
+          <div class="w-11 h-11 rounded-xl gold-button-gradient flex items-center justify-center shrink-0"><i class="fa-solid fa-file-signature"></i></div>
+          <div><b>عقد إدارة موثّق 10 سنوات وأكثر</b><p class="text-sm text-slate-400">اتفاقية قانونية تضمن عائدك الشهري بغضّ النظر عن معدل الإشغال.</p></div>
+        </div>
+        <div class="flex items-start gap-4 glass-card rounded-2xl p-4">
+          <div class="w-11 h-11 rounded-xl gold-button-gradient flex items-center justify-center shrink-0"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <div><b>تحويل شهري تلقائي لحسابك</b><p class="text-sm text-slate-400">عائد مضمون يبدأ من 7% وحتى 9% سنوياً حسب المشروع والعقار.</p></div>
+        </div>
+        <div class="flex items-start gap-4 glass-card rounded-2xl p-4">
+          <div class="w-11 h-11 rounded-xl gold-button-gradient flex items-center justify-center shrink-0"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div><b>إدارة شاملة 360°</b><p class="text-sm text-slate-400">تأجير، صيانة، فواتير، تنظيف، وتقارير أداء ربع سنوية مفصّلة.</p></div>
+        </div>
+        <div class="flex items-start gap-4 glass-card rounded-2xl p-4">
+          <div class="w-11 h-11 rounded-xl gold-button-gradient flex items-center justify-center shrink-0"><i class="fa-solid fa-key"></i></div>
+          <div><b>تملك فوري + إدارة استثمارية</b><p class="text-sm text-slate-400">العقار باسمك من اليوم الأول، ونحن نشغّله ونضاعف قيمته السوقية.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="glass-card rounded-[32px] p-8 lg:p-10 text-center relative overflow-hidden">
+        <div class="orb w-64 h-64 bg-gold/40 -top-20 -end-20" style="filter:blur(60px)"></div>
+        <div class="text-xs tracking-[.3em] text-gold">مثال حقيقي</div>
+        <div class="text-slate-400 text-sm mt-2">عقار بقيمة <b class="text-white">$100,000</b> — عائد مضمون 7.8% سنوياً</div>
+
+        <div class="text-7xl font-black text-gold-gradient my-8 float-slow">
+          $650<span class="text-2xl align-top">/شهر</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3 text-sm">
+          <div class="bg-dark-700/70 border border-gold/10 rounded-2xl p-4"><div class="text-gold font-black text-lg">$7,800</div><div class="text-xs text-slate-400 mt-1">سنوياً مضمون</div></div>
+          <div class="bg-dark-700/70 border border-gold/10 rounded-2xl p-4"><div class="text-gold font-black text-lg">$78,000</div><div class="text-xs text-slate-400 mt-1">عائد خلال 10 سنوات</div></div>
+          <div class="bg-dark-700/70 border border-gold/10 rounded-2xl p-4"><div class="text-gold font-black text-lg">0</div><div class="text-xs text-slate-400 mt-1">جهد أو متابعة</div></div>
+        </div>
+
+        <a href="#calculator" class="gold-button-gradient w-full mt-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2">
+          <i class="fa-solid fa-calculator"></i> احسب عائدك الخاص الآن
+        </a>
+        <p class="text-[11px] text-slate-500 mt-4">* العائد المضمون يُحدَّد في العقد ويختلف حسب المشروع ونوع العقار.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROI Calculator ===== -->
+<section id="calculator" class="py-24 relative scroll-mt-24 bg-dark-800/40 border-y border-gold/10 overflow-hidden">
+  <div class="orb w-[340px] h-[340px] bg-[#c9a84c] -bottom-32 -right-32"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="text-center mb-12 reveal">
+      <span class="section-eyebrow"><i class="fa-solid fa-calculator"></i> أداة تفاعلية</span>
+      <h2 class="text-4xl font-black mt-5">احسب <span class="text-gold-gradient">عائدك الاستثماري</span> المتوقع</h2>
+      <div class="gold-divider mt-6"></div>
+      <p class="text-slate-400 mt-6 max-w-2xl mx-auto">حرّك المؤشرات أدناه وشاهد أرباحك المتوقعة تتحدث <b class="text-gold">فورياً</b> — الدخل الإيجاري الشهري، نمو قيمة العقار، والعائد الحقيقي على دفعتك الأولى.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+      <!-- Inputs -->
+      <div class="glass-card rounded-[28px] p-7 lg:p-9 reveal">
+        <!-- Country presets -->
+        <div class="mb-7">
+          <div class="text-sm font-bold mb-3"><i class="fa-solid fa-earth-americas text-gold"></i> اختر سوقاً جاهزاً (يضبط المؤشرات تلقائياً):</div>
+          <div class="flex flex-wrap gap-2" id="presets">
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-bold" data-yield="9.5" data-growth="6">🇬🇪 جورجيا</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-bold" data-yield="9.2" data-growth="5.5">🇦🇿 باكو</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-bold" data-yield="7.5" data-growth="6.5">🇦🇪 دبي</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-bold" data-yield="6.5" data-growth="8">🇹🇷 إسطنبول</button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-bold" data-yield="5.8" data-growth="4.5">🇪🇸 إسبانيا</button>
+          </div>
+        </div>
+
+        <div class="space-y-7">
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-solid fa-tag text-gold"></i> سعر العقار</label>
+              <span class="font-black text-gold-gradient text-lg" id="priceVal">$120,000</span>
+            </div>
+            <input type="range" id="inPrice" min="30000" max="600000" step="5000" value="120000">
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-solid fa-hand-holding-dollar text-gold"></i> الدفعة الأولى</label>
+              <span class="font-black text-gold-gradient text-lg" id="downVal">20%</span>
+            </div>
+            <input type="range" id="inDown" min="20" max="100" step="5" value="20">
+            <div class="text-xs text-slate-500 mt-1">مقدار الدفعة: <b id="downAmt" class="text-gold">$24,000</b></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-solid fa-building-columns text-gold"></i> التمويل البنكي</label>
+              <span class="font-black text-gold-gradient text-lg" id="loanVal">40%</span>
+            </div>
+            <input type="range" id="inLoan" min="0" max="60" step="5" value="40">
+            <div class="text-xs text-slate-500 mt-1">قيمة القرض (حر التصرف): <b id="loanAmt" class="text-gold">$48,000</b> • المتبقي تقسيطاً: <b id="instAmt" class="text-gold">$48,000</b></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-solid fa-house-circle-check text-gold"></i> العائد الإيجاري السنوي</label>
+              <span class="font-black text-gold-gradient text-lg" id="yieldVal">8%</span>
+            </div>
+            <input type="range" id="inYield" min="4" max="12" step="0.1" value="8">
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-solid fa-arrow-trend-up text-gold"></i> نمو قيمة العقار سنوياً</label>
+              <span class="font-black text-gold-gradient text-lg" id="growthVal">5%</span>
+            </div>
+            <input type="range" id="inGrowth" min="1" max="12" step="0.5" value="5">
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2 text-sm">
+              <label class="font-bold"><i class="fa-regular fa-calendar text-gold"></i> مدة الاستثمار</label>
+              <span class="font-black text-gold-gradient text-lg" id="yearsVal">5 سنوات</span>
+            </div>
+            <input type="range" id="inYears" min="3" max="15" step="1" value="5">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="space-y-6 reveal">
+        <div class="grid grid-cols-2 gap-5">
+          <div class="glass-card rounded-3xl p-6 text-center">
+            <div class="text-xs text-slate-400 mb-2">الدخل الإيجاري الشهري</div>
+            <div class="text-3xl font-black text-gold-gradient" id="outMonthly">$800</div>
+            <div class="text-[11px] text-slate-500 mt-2">يُحوَّل لحسابك شهرياً</div>
+          </div>
+          <div class="glass-card rounded-3xl p-6 text-center">
+            <div class="text-xs text-slate-400 mb-2">العائد السنوي الإجمالي</div>
+            <div class="text-3xl font-black text-gold-gradient" id="outAnnual">13.0%</div>
+            <div class="text-[11px] text-slate-500 mt-2">إيجار + نمو قيمة العقار</div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-7 text-center border-gold/40" style="box-shadow:0 0 40px rgba(201,168,76,.12)">
+          <div class="text-sm text-slate-300">🔥 العائد السنوي على دفعتك الأولى (مع قوة التمويل)</div>
+          <div class="text-6xl font-black text-gold-gradient my-3" id="outROI">65.0%</div>
+          <p class="text-xs text-slate-500 leading-relaxed px-4">
+            لأنك تدفع 20% فقط من القيمة وتمتلك العقار بالكامل، كل عائد يتحقق يُحسب على دفعتك أنت — هذا هو سحر <b class="text-gold">الرافعة التمويلية</b>.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-7">
+          <div class="flex justify-between items-center mb-5">
+            <b class="text-sm"><i class="fa-solid fa-chart-column text-gold"></i> نمو أرباحك التراكمية سنة بسنة</b>
+            <span class="text-xs text-gold" id="outYearsLabel">خلال 5 سنوات</span>
+          </div>
+          <div class="flex items-end gap-1.5 h-44" id="roiChart"></div>
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-gold/10">
+            <span class="text-sm text-slate-400">قيمة عقارك بعد المدة</span>
+            <span class="font-black text-xl text-gold-gradient" id="outFutureVal">$153,000</span>
+          </div>
+          <div class="flex justify-between items-center mt-2">
+            <span class="text-sm text-slate-400">إجمالي الربح المتوقع (نمو + إيجارات)</span>
+            <span class="font-black text-xl text-emerald-400" id="outTotalProfit">+$81,000</span>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-slate-500 text-center leading-relaxed">
+          * الأرقام تقديرية لأغراض توضيحية قبل الضريبة والرسوم، وتختلف حسب المشروع الفعلي. تواصل مع مستشارينا للحصول على دراسة جدوى دقيقة لعقارك.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Steps ===== -->
+<section id="steps" class="py-24 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <span class="section-eyebrow"><i class="fa-solid fa-route"></i> رحلتك معنا</span>
+      <h2 class="text-4xl font-black mt-5">من الاستشارة إلى <span class="text-gold-gradient">أول ربح</span> في 4 خطوات</h2>
+      <div class="gold-divider mt-6"></div>
+    </div>
+
+    <div class="relative grid md:grid-cols-4 gap-8 text-center">
+      <div class="step-line hidden md:block"></div>
+      <div class="reveal relative">
+        <div class="w-[68px] h-[68px] mx-auto rounded-full gold-button-gradient flex items-center justify-center text-2xl relative z-10 shadow-xl">١</div>
+        <h3 class="font-black text-lg mt-5">استشارة مجانية</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">جلسة تعريفية نحدد فيها ميزانيتك وأهدافك والسوق الأنسب لك.</p>
+      </div>
+      <div class="reveal relative">
+        <div class="w-[68px] h-[68px] mx-auto rounded-full gold-button-gradient flex items-center justify-center text-2xl relative z-10 shadow-xl">٢</div>
+        <h3 class="font-black text-lg mt-5">اختيار المشروع</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">جولة افتراضية أو ميدانية على المشاريع، ودراسة جدوى شفافة بالأرقام.</p>
+      </div>
+      <div class="reveal relative">
+        <div class="w-[68px] h-[68px] mx-auto rounded-full gold-button-gradient flex items-center justify-center text-2xl relative z-10 shadow-xl">٣</div>
+        <h3 class="font-black text-lg mt-5">توقيع وتمويل</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">20% مقدماً، تمويل حتى 60%، والتملك <b class="text-gold">فوري</b> باسمك.</p>
+      </div>
+      <div class="reveal relative">
+        <div class="w-[68px] h-[68px] mx-auto rounded-full gold-button-gradient flex items-center justify-center text-2xl relative z-10 shadow-xl">٤</div>
+        <h3 class="font-black text-lg mt-5">استلام الأرباح</h3>
+        <p class="text-sm text-slate-400 mt-2 leading-relaxed">عقد إدارة 10 سنوات+ وعائد شهري مضمون يتحول لحسابك مباشرة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="py-20 bg-dark-800/40 border-y border-gold/10">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-3xl font-black">ماذا يقول <span class="text-gold-gradient">مستثمرونا</span>؟</h2>
+      <div class="gold-divider mt-5"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-7">
+      <div class="glass-card rounded-3xl p-7 reveal">
+        <div class="text-gold mb-3">★★★★★</div>
+        <p class="text-slate-300 leading-relaxed text-sm">"اشتريت شقة في باتومي بدفعة 20% فقط، وخلال 45 يوماً كان العقار باسمي والعائد الشهلي ينزل حسابي بانتظام. تجاوزت توقعاتي."</p>
+        <div class="flex items-center gap-3 mt-5">
+          <div class="toast-avatar">م</div>
+          <div><b class="text-sm">محمد العتيبي</b><div class="text-xs text-slate-500">الرياض — مستثمر في جورجيا</div></div>
+        </div>
+      </div>
+      <div class="glass-card rounded-3xl p-7 reveal">
+        <div class="text-gold mb-3">★★★★★</div>
+        <p class="text-slate-300 leading-relaxed text-sm">"التمويل البنكي 60% غيّر كل شيء — القرض كان حر تصرفي واستخدمت جزءاً منه لتجديد مشروعي. تملك فوري فعلاً وبدون تعقيد."</p>
+        <div class="flex items-center gap-3 mt-5">
+          <div class="toast-avatar">س</div>
+          <div><b class="text-sm">سارة المنصوري</b><div class="text-xs text-slate-500">دبي — مستثمرة في باكو</div></div>
+        </div>
+      </div>
+      <div class="glass-card rounded-3xl p-7 reveal">
+        <div class="text-gold mb-3">★★★★★</div>
+        <p class="text-slate-300 leading-relaxed text-sm">"عقد الإدارة لمدة 10 سنوات بعائد مضمون أعطاني راحة بال كاملة. لست بحاجة لمتابعة أي شيء — التقارير الربعية تصلني بانتظام."</p>
+        <div class="flex items-center gap-3 mt-5">
+          <div class="toast-avatar">أ</div>
+          <div><b class="text-sm">أحمد الشمري</b><div class="text-xs text-slate-500">الكويت — مستثمر في إسطنبول</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="py-24 scroll-mt-24">
+  <div class="max-w-4xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="section-eyebrow"><i class="fa-regular fa-circle-question"></i> الأسئلة الشائعة</span>
+      <h2 class="text-4xl font-black mt-5">كل ما يهمك <span class="text-gold-gradient">قبل الاستثمار</span></h2>
+      <div class="gold-divider mt-6"></div>
+    </div>
+
+    <div class="space-y-4" id="faqList">
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-building-columns text-gold ml-2"></i> هل أستطيع الحصول على تمويل بنكي؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">نعم! بالتعاون مع بنوك محلية ودولية نوفّر لك تمويلاً بنكياً يصل إلى <b class="text-gold">60% من قيمة العقار</b>، والقرض <b class="text-gold">حر التصرف</b> — يمكنك استخدامه لأي غرض إضافي.</p></div>
+      </div>
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-hand-holding-dollar text-gold ml-2"></i> كم الدفعة الأولى ونظام السداد؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">الدفعة الأولى <b class="text-gold">20% فقط</b> عند التوقيع، والباقي يُقسَّط على <b class="text-gold">3 سنوات وأكثر</b> بأقساط مريحة — وغالباً ما يغطي الدخل الإيجاري القسط بالكامل ويبقى لك فائض.</p></div>
+      </div>
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-shield-halved text-gold ml-2"></i> كيف يضمن عائدي الشهري؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">عبر <b class="text-gold">عقد إدارة مؤجرة موثّق لمدة 10 سنوات وأكثر</b> — ندير العقار بالكامل (تأجير، صيانة، تحصيل) ونضمن لك عائداً شهرياً ثابتاً يُحوَّل لحسابك أينما كنت، بغضّ النظر عن نسبة الإشغال.</p></div>
+      </div>
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-key text-gold ml-2"></i> هل التملك فوري باسمي؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">نعم، التملك <b class="text-gold">فوري وقانوني 100%</b> — يُسجَّل العقار باسمك في السجل العقاري الرسمي من لحظة إتمام الصفقة، ونتولى نحن كل الإجراءات القانونية والترجمة والتوثيق نيابةً عنك.</p></div>
+      </div>
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-plane-departure text-gold ml-2"></i> هل يجب أن أسافر لإتمام الشراء؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">إطلاقاً — نتيح التملك <b class="text-gold">عن بُعد بالكامل</b> عبر توكيل رسمي موثّق، مع جولة افتراضية بالمشروع ومقاطع حية قبل القرار. وإذا رغبت بالزيارة الميدانية نرتّب لك كل شيء.</p></div>
+      </div>
+      <div class="faq-item glass-card rounded-2xl overflow-hidden reveal">
+        <button class="w-full flex items-center justify-between gap-4 p-5 text-right font-bold">
+          <span><i class="fa-solid fa-rotate text-gold ml-2"></i> هل أستطيع إعادة بيع العقار لاحقاً؟</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-gold"></i>
+        </button>
+        <div class="faq-answer"><p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">بالتأكيد. العقار ملكك بالكامل ويمكنك بيعه أو تأجيره أو التبرع به في أي وقت. كما نساعدك بإعادة البيع بدراسة سعرية ذكية لتحقيق أقصى ربح من نمو القيمة.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA / Contact ===== -->
+<section id="contact" class="py-24 scroll-mt-24">
+  <div class="max-w-6xl mx-auto px-5 lg:px-8">
+    <div class="relative rounded-[36px] overflow-hidden border border-gold/30 p-8 lg:p-14 text-center reveal"
+         style="background:linear-gradient(135deg,#1a1420,#0d0b10)">
+      <div class="orb w-96 h-96 bg-gold/50 -top-40 -right-40"></div>
+      <div class="orb w-80 h-80 bg-[#6b4fd8]/40 -bottom-32 -left-32" style="filter:blur(80px)"></div>
+
+      <div class="relative">
+        <span class="section-eyebrow"><i class="fa-solid fa-rocket"></i> ابدأ الآن</span>
+        <h2 class="text-4xl lg:text-5xl font-black mt-5 leading-tight">
+          مقعدك في <span class="text-gold-gradient">الفرصة القادمة</span> ينتظرك
+        </h2>
+        <p class="text-slate-400 mt-5 max-w-xl mx-auto">احجز استشارتك المجانية (قيمتها $300) وسيقوم أحد مستشارينا بالتواصل معك خلال ساعة عمل واحدة، مع دراسة جدوى مخصصة ل_budgetك.</p>
+
+        <form id="leadForm" class="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto mt-10 text-right">
+          <input required type="text" placeholder="الاسم الكامل" class="bg-dark-900/80 border border-gold/20 rounded-xl px-5 py-4 placeholder-slate-500 focus:outline-none focus:border-gold transition">
+          <input required type="tel" placeholder="رقم الهاتف / واتساب" class="bg-dark-900/80 border border-gold/20 rounded-xl px-5 py-4 placeholder-slate-500 focus:outline-none focus:border-gold transition">
+          <select class="bg-dark-900/80 border border-gold/20 rounded-xl px-5 py-4 text-slate-300 focus:outline-none focus:border-gold transition">
+            <option value="">الدولة المهتم بها...</option>
+            <option>🇬🇪 جورجيا</option>
+            <option>🇦🇿 باكو</option>
+            <option>🇹🇷 إسطنبول</option>
+            <option>🇦🇪 دبي</option>
+            <option>🇪🇸 إسبانيا</option>
+          </select>
+          <select class="bg-dark-900/80 border border-gold/20 rounded-xl px-5 py-4 text-slate-300 focus:outline-none focus:border-gold transition">
+            <option value="">الميزانية التقريبية...</option>
+            <option>أقل من $50,000</option>
+            <option>$50,000 – $100,000</option>
+            <option>$100,000 – $250,000</option>
+            <option>أكثر من $250,000</option>
+          </select>
+          <button type="submit" class="gold-button-gradient sm:col-span-2 font-black text-lg py-4 rounded-xl mt-2 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i> احجز استشارتي المجانية الآن
+          </button>
+        </form>
+        <p class="text-xs text-slate-500 mt-5"><i class="fa-solid fa-lock"></i> بياناتك محمية ولن تُشارك مع أي طرف ثالث</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="border-t border-gold/10 bg-dark-800/60 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid md:grid-cols-4 gap-10">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl gold-button-gradient flex items-center justify-center text-xl"><i class="fa-solid fa-house-chimney"></i></div>
+        <div><div class="font-black text-xl text-gold-gradient">ROSHN HOUSE</div><div class="text-[11px] tracking-[.3em] text-gold/80">المركز العقاري الفاخر</div></div>
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed mt-5 max-w-md">شريكك الموثوق في الاستثمار العقاري الدولي منذ أكثر من 12 عاماً — مشاريع منتقاة في جورجيا، باكو، إسطنبول، دبي وإسبانيا، مع تمويل مرن وعوائد مضمونة.</p>
+      <div class="flex gap-3 mt-6">
+        <a href="#" class="w-10 h-10 rounded-xl border border-gold/25 text-gold flex items-center justify-center hover:bg-gold/10 transition" aria-label="انستغرام"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="w-10 h-10 rounded-xl border border-gold/25 text-gold flex items-center justify-center hover:bg-gold/10 transition" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="w-10 h-10 rounded-xl border border-gold/25 text-gold flex items-center justify-center hover:bg-gold/10 transition" aria-label="تويتر"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="w-10 h-10 rounded-xl border border-gold/25 text-gold flex items-center justify-center hover:bg-gold/10 transition" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-black mb-4 text-gold">روابط سريعة</h4>
+      <ul class="space-y-2.5 text-sm text-slate-400">
+        <li><a href="#projects" class="hover:text-gold transition">المشاريع الحالية</a></li>
+        <li><a href="#financing" class="hover:text-gold transition">خطة التمويل</a></li>
+        <li><a href="#management" class="hover:text-gold transition">العائد المضمون</a></li>
+        <li><a href="#calculator" class="hover:text-gold transition">حاسبة العائد</a></li>
+        <li><a href="#faq" class="hover:text-gold transition">الأسئلة الشائعة</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-black mb-4 text-gold">تواصل معنا</h4>
+      <ul class="space-y-2.5 text-sm text-slate-400">
+        <li><i class="fa-brands fa-whatsapp text-emerald-400"></i> +995 555 000 111</li>
+        <li><i class="fa-solid fa-envelope text-gold"></i> invest@roshnhouse.com</li>
+        <li><i class="fa-solid fa-location-dot text-gold"></i> باتومي • باكو • دبي • إسطنبول</li>
+        <li><i class="fa-regular fa-clock text-gold"></i> دعم 24/7 بالعربية</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 mt-12 pt-6 border-t border-gold/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
+    <span>© 2025 روشن هاوس — جميع الحقوق محفوظة</span>
+    <span>الأرقام والمحاكاة لأغراض توضيحية وليست وعداً بعائد مضمَن ما لم يُنصّ في العقد.</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/995555000111" target="_blank" rel="noopener"
+   class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-2xl text-white shadow-2xl hover:scale-110 transition"
+   aria-label="واتساب" style="box-shadow:0 0 30px rgba(37,211,102,.5)">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Live purchase toast -->
+<div id="liveToast" class="toast-bubble fixed bottom-6 left-6 z-40 glass-card rounded-2xl p-4 flex items-center gap-4 max-w-[320px]">
+  <div class="toast-avatar" id="toastIcon"><i class="fa-solid fa-house-circle-check"></i></div>
+  <div class="text-sm leading-snug">
+    <b id="toastName" class="text-gold-light">محمد من الرياض</b>
+    <span id="toastText" class="text-slate-300 block">حجز وحدة في «باتومي سي تاون» قبل لحظات</span>
+  </div>
+</div>
+
+<script>
+/* ============ Navbar ============ */
+const navbar = document.getElementById('navbar');
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  menuBtn.innerHTML = mobileMenu.classList.contains('hidden')
+    ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+  menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+}));
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 30) {
+    navbar.classList.add('bg-dark-900/85','backdrop-blur-xl','border-gold/15','shadow-2xl');
+  } else {
+    navbar.classList.remove('bg-dark-900/85','backdrop-blur-xl','border-gold/15','shadow-2xl');
+  }
+});
+
+/* ============ Reveal on scroll ============ */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      // animate progress bars inside
+      e.target.querySelectorAll('.units-progress span[data-progress]').forEach(s => {
+        s.style.width = s.dataset.progress + '%';
+      });
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ============ Counters ============ */
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals || 0);
+    const dur = 1600; const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * eased).toLocaleString('en-US', {minimumFractionDigits: decimals, maximumFractionDigits: decimals});
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+/* ============ Hero Countdown ============ */
+const countdownTarget = Date.now() + ((2 * 24 + 14) * 3600 + 37 * 60) * 1000;
+function pad(n) { return String(n).padStart(2, '0'); }
+setInterval(() => {
+  let diff = Math.max(0, countdownTarget - Date.now()) / 1000;
+  document.getElementById('cd-d').textContent = pad(Math.floor(diff / 86400));
+  document.getElementById('cd-h').textContent = pad(Math.floor(diff / 3600) % 24);
+  document.getElementById('cd-m').textContent = pad(Math.floor(diff / 60) % 60);
+  document.getElementById('cd-s').textContent = pad(Math.floor(diff) % 60);
+}, 1000);
+
+/* ============ Project filter ============ */
+const filterBtns = document.querySelectorAll('#filterBar .filter-btn');
+const cards = document.querySelectorAll('.project-card');
+filterBtns.forEach(btn => btn.addEventListener('click', () => {
+  filterBtns.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const f = btn.dataset.filter;
+  cards.forEach(card => {
+    const show = f === 'all' || card.dataset.country === f;
+    card.style.transition = 'opacity .35s ease, transform .35s ease';
+    if (show) {
+      card.style.display = '';
+      requestAnimationFrame(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; });
+    } else {
+      card.style.opacity = '0'; card.style.transform = 'scale(.96)';
+      setTimeout(() => { if (card.style.opacity === '0') card.style.display = 'none'; }, 320);
+    }
+  });
+}));
+
+/* ============ FAQ ============ */
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('button').addEventListener('click', () => {
+    document.querySelectorAll('.faq-item').forEach(o => { if (o !== item) o.classList.remove('open'); });
+    item.classList.toggle('open');
+  });
+});
+
+/* ============ ROI Calculator ============ */
+const el = id => document.getElementById(id);
+const inPrice = el('inPrice'), inDown = el('inDown'), inLoan = el('inLoan'),
+      inYield = el('inYield'), inGrowth = el('inGrowth'), inYears = el('inYears');
+
+const fmt = v => '$' + Math.round(v).toLocaleString('en-US');
+
+function calculate() {
+  const P  = +inPrice.value;
+  let dp = +inDown.value;               // down %
+  let lp = +inLoan.value;               // loan %
+  if (dp + lp > 100) lp = 100 - dp;     // never exceed 100%
+  const y  = +inYield.value / 100;      // rental yield
+  const g  = +inGrowth.value / 100;     // appreciation
+  const N  = +inYears.value;
+
+  const D = P * dp / 100;               // down payment amount
+  const L = P * lp / 100;               // bank loan
+  const inst = P - D - L;               // installments remainder
+
+  const rentYear = P * y;
+  const monthly = rentYear / 12;
+  const annualTotalPct = (y + g) * 100;
+  const roiOnDown = D > 0 ? ((P * (y + g)) / D) * 100 : 0;
+  const futureVal = P * Math.pow(1 + g, N);
+  const capitalGain = futureVal - P;
+  const totalProfit = capitalGain + rentYear * N;
+
+  // labels
+  el('priceVal').textContent = fmt(P);
+  el('downVal').textContent = dp + '%';
+  el('downAmt').textContent = fmt(D);
+  el('loanVal').textContent = lp + '%';
+  el('loanAmt').textContent = fmt(L);
+  el('instAmt').textContent = fmt(inst);
+  el('yieldVal').textContent = (+inYield.value).toFixed(1) + '%';
+  el('growthVal').textContent = (+inGrowth.value).toFixed(1) + '%';
+  el('yearsVal').textContent = N + (N === 1 ? ' سنة' : ' سنوات');
+
+  // outputs
+  el('outMonthly').textContent = fmt(monthly);
+  el('outAnnual').textContent = annualTotalPct.toFixed(1) + '%';
+  el('outROI').textContent = roiOnDown.toFixed(0) + '%';
+  el('outFutureVal').textContent = fmt(futureVal);
+  el('outTotalProfit').textContent = '+' + fmt(totalProfit);
+  el('outYearsLabel').textContent = 'خلال ' + N + ' سنوات';
+
+  // chart
+  const chart = el('roiChart');
+  chart.innerHTML = '';
+  const finals = [];
+  for (let i = 1; i <= N; i++) {
+    finals.push(P * (Math.pow(1 + g, i) - 1) + rentYear * i);
+  }
+  const max = finals[N - 1];
+  for (let i = 1; i <= N; i++) {
+    const v = finals[i - 1];
+    const col = document.createElement('div');
+    col.className = 'flex-1 flex flex-col items-center justify-end h-full gap-1.5 min-w-0';
+    col.title = 'السنة ' + i + ': ' + fmt(v);
+    const bar = document.createElement('div');
+    bar.className = 'roi-bar w-full' + (i === N ? ' final' : '');
+    bar.style.height = '0%';
+    const lbl = document.createElement('div');
+    lbl.className = 'text-[9px] text-slate-500 shrink-0';
+    lbl.textContent = i;
+    col.appendChild(bar); col.appendChild(lbl);
+    chart.appendChild(col);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      bar.style.height = Math.max(2, (v / max) * 100) + '%';
+    }));
+  }
+}
+[inPrice, inDown, inLoan, inYield, inGrowth, inYears].forEach(i => i.addEventListener('input', () => {
+  document.querySelectorAll('#presets .filter-btn').forEach(b => b.classList.remove('active'));
+  calculate();
+}));
+
+// Country presets
+document.querySelectorAll('#presets .filter-btn').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('#presets .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  inYield.value = btn.dataset.yield;
+  inGrowth.value = btn.dataset.growth;
+  calculate();
+}));
+calculate();
+
+/* ============ Live purchase toasts ============ */
+const toasts = [
+  { i: 'fa-house-circle-check', n: 'محمد من الرياض',   t: 'حجز وحدة في «باتومي سي تاون» قبل دقيقتين' },
+  { i: 'fa-money-bill-transfer', n: 'سارة من دبي',     t: 'استلمت عائدها الشهري المضمون لشهر هذا' },
+  { i: 'fa-file-signature',      n: 'أحمد من الكويت',  t: 'وقّع عقد إدارة مؤجرة مضمونة لمدة 10 سنوات' },
+  { i: 'fa-building-columns',    n: 'نورة من قطر',     t: 'حصلت على تمويل بنكي 60% لشقتها في باكو' },
+  { i: 'fa-key',                 n: 'خالد من عمّان',   t: 'استلم مفاتيح شقته في تبليسي هايتس' },
+  { i: 'fa-chart-line',          n: 'ليلى من مسقط',    t: 'باعت وحدة في إسطنبول بربح 34% بعد سنتين' },
+];
+const toastBox = el('liveToast');
+let toastIdx = 0;
+function showToast() {
+  const d = toasts[toastIdx % toasts.length];
+  toastIdx++;
+  el('toastIcon').innerHTML = '<i class="fa-solid ' + d.i + '"></i>';
+  el('toastName').textContent = d.n;
+  el('toastText').textContent = d.t;
+  toastBox.classList.add('show');
+  setTimeout(() => toastBox.classList.remove('show'), 5200);
+}
+setTimeout(showToast, 4000);
+setInterval(showToast, 13000);
+
+/* ============ Lead form ============ */
+el('leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> تم الحجز بنجاح! سنتواصل معك قريباً';
+  btn.disabled = true;
+  btn.style.opacity = '.85';
+  showToast('form');
+  el('toastIcon').innerHTML = '<i class="fa-solid fa-champagne-glasses"></i>';
+  el('toastName').textContent = 'طلبك وصل إلينا';
+  el('toastText').textContent = 'سيتواصل معك مستشارك الاستثماري خلال أقل من ساعة';
+  toastBox.classList.add('show');
+  setTimeout(() => toastBox.classList.remove('show'), 6000);
+  setTimeout(() => { e.target.reset(); btn.disabled = false; btn.style.opacity = '1';
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> احجز استشارتي المجانية الآن'; }, 5000);
+});
+</script>
 </body>
 </html>
-```
